@@ -1,0 +1,29 @@
+site_name: Urdu Poetry Circle
+site_url: https://example.com/
+theme:
+    name: material
+    features:
+        - tabs
+        - search.suggest
+        - search.share
+plugins:
+    - search:
+        prebuild_index: true
+        indexing: 'full'
+    - awesome-pages
+markdown_extensions:
+  - meta
+  - toc:
+      permalink: 📃
+  - smarty
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+  - attr_list
+extra_css:
+  - stylesheets/extra.css
