@@ -83,15 +83,15 @@ def generate_md(file_path: str):
         poet_path = Path.joinpath(directory_path, item['Poet'].lower())
         poet_path.mkdir(exist_ok=True)
         ghazal = item['Ghazal/Nazm']
-        ghazal = ghazal.replace('.', '') # ghazals with . in them
-        ghazal = unidecode.unidecode(ghazal) #r remove accents
+        ghazal = ghazal.replace('.', '')  # ghazals with . in them
+        ghazal = unidecode.unidecode(ghazal)  # remove accents
         ghazal_path = Path.joinpath(poet_path, ghazal)
         ghazal_file = ghazal_path.with_suffix('.md')
         with open(ghazal_path.with_suffix('.md'), 'w') as file:
             boiler_text = (
-                f"---\n"
+                f"***\n"
                 f"Date Read: {item['Date']}\n"
-                f"---\n\n"
+                f"***\n\n"
                 f"# {ghazal}\n\n"
                 f"### Text\n"
             )

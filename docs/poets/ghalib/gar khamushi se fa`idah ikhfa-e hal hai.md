@@ -1,6 +1,6 @@
----
+***
 Date Read: March 4, 2022
----
+***
 
 # gar khamushi se fa`idah ikhfa-e hal hai
 
