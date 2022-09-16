@@ -1,7 +1,5 @@
 ---
-
 Date Read: January 22, 2021
-
 ---
 
 # milti hai khu-e yar se nar iltihab men

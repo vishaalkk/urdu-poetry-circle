@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 20, 2022
-
 ---
 
 # mir-e gum-kardah-chaman zamzamah-pardaz hai ek

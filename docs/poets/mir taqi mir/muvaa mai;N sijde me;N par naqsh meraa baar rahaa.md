@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 3, 2021
-
 ---
 
 # muvaa mai;N sijde me;N par naqsh meraa baar rahaa

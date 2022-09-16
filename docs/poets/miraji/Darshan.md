@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 10, 2020
-
 ---
 
 # Darshan

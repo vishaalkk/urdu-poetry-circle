@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 4, 2020
-
 ---
 
 # kyunkar us but se rakhun jan 'aziz

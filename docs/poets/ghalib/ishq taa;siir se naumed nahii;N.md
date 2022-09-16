@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 18, 2020
-
 ---
 
 # ishq taa;siir se naumed nahii;N

@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 9, 2021
-
 ---
 
 # ho ga`i hai ghair ki shirin-bayani kar-gar

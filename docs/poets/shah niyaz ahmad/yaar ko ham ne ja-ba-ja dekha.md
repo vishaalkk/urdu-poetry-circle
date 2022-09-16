@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 18, 2020
-
 ---
 
 # yaar ko ham ne ja-ba-ja dekha

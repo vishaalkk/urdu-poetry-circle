@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 18, 2022
-
 ---
 
 # ek qatra ashk ka chhalka to dariya kar diya

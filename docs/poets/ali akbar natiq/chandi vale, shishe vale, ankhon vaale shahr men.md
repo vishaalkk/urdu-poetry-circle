@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 26, 2020
-
 ---
 
 # chandi vale, shishe vale, ankhon vaale shahr men

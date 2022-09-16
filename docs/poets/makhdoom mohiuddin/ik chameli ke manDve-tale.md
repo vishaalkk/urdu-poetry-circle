@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 5, 2021
-
 ---
 
 # ik chameli ke manDve-tale

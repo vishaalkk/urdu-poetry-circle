@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 3, 2020
-
 ---
 
 # sach hai hamin ko aap ke shikve baja na the 

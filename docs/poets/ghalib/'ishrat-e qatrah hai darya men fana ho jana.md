@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 24, 2020
-
 ---
 
 # 'ishrat-e qatrah hai darya men fana ho jana

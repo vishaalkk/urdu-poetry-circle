@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 31, 2020
-
 ---
 
 # Bol Ke Lab Azad Hain Tere

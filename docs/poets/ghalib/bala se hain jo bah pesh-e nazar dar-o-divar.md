@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 29, 2020
-
 ---
 
 # bala se hain jo bah pesh-e nazar dar-o-divar

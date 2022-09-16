@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 17, 2020
-
 ---
 
 # husn ghamze ki kashakash se chhuta mere ba'd

@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 21, 2021
-
 ---
 
 # farhaad haath teshe pah Tuk rah ke Daaltaa

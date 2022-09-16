@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 19, 2020
-
 ---
 
 # phir is andaaz se bahaar aaii

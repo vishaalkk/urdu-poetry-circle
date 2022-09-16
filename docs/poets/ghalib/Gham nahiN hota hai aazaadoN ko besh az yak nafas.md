@@ -1,7 +1,5 @@
 ---
-
 Date Read: November 6, 2020
-
 ---
 
 # Gham nahiN hota hai aazaadoN ko besh az yak nafas

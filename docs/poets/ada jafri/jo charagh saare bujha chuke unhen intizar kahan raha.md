@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 4, 2022
-
 ---
 
 # jo charagh saare bujha chuke unhen intizar kahan raha

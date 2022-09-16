@@ -1,7 +1,5 @@
 ---
-
 Date Read: January 29, 2021
-
 ---
 
 # log puchhenge kyuun udaas ho tum

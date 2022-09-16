@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 4, 2021
-
 ---
 
 # garmi se main to atish-e gham ki pighal gaya

@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 12, 2021
-
 ---
 
 # zikr meraa bah badii bhii use man:zuur nahii;N

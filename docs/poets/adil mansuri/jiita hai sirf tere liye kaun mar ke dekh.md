@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 18, 2022
-
 ---
 
 # jiita hai sirf tere liye kaun mar ke dekh

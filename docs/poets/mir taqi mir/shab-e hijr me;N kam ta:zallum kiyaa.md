@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 26, 2021
-
 ---
 
 # shab-e hijr me;N kam ta:zallum kiyaa

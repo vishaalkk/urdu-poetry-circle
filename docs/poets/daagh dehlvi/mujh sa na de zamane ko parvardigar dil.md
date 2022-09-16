@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 17, 2021
-
 ---
 
 # mujh sa na de zamane ko parvardigar dil

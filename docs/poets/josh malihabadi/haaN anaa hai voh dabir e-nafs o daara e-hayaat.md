@@ -1,7 +1,5 @@
 ---
-
 Date Read: August 5, 2022
-
 ---
 
 # haaN anaa hai voh dabir e-nafs o daara e-hayaat

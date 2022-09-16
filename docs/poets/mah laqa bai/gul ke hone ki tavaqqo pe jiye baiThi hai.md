@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 26, 2021
-
 ---
 
 # gul ke hone ki tavaqqo pe jiye baiThi hai

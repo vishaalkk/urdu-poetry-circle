@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 8, 2022
-
 ---
 
 # ko`i ummid bar nahin ati

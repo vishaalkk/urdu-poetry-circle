@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 17, 2021
-
 ---
 
 # hai sabzah-zar har dar-o-divar-e gham-kadah

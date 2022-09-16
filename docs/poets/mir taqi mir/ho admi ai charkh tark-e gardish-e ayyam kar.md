@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 25, 2022
-
 ---
 
 # ho admi ai charkh tark-e gardish-e ayyam kar

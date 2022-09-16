@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 10, 2022
-
 ---
 
 # jab se khat hai siyah khal ki thang

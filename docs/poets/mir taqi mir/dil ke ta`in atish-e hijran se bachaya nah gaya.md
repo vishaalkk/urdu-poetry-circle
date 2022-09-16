@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 17, 2021
-
 ---
 
 # dil ke ta`in atish-e hijran se bachaya nah gaya

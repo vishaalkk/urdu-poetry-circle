@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 29, 2020
-
 ---
 
 # Nisar Mein Teri Galiyon Ke

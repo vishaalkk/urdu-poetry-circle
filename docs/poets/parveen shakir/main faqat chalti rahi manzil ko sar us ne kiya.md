@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 5, 2021
-
 ---
 
 # main faqat chalti rahi manzil ko sar us ne kiya

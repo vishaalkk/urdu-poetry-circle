@@ -1,7 +1,5 @@
 ---
-
 Date Read: October 16, 2020
-
 ---
 
 # kisi ke dast-e-inayat ne kunj-e-zindan men 

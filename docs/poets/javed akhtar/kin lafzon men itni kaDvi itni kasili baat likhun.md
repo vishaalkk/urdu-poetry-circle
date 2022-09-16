@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 20, 2022
-
 ---
 
 # kin lafzon men itni kaDvi itni kasili baat likhun

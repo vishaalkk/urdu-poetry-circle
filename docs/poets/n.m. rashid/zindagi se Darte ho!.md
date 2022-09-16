@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 8, 2022
-
 ---
 
 # zindagi se Darte ho!

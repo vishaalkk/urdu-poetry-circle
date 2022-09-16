@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 11, 2020
-
 ---
 
 # ham par jafaa se tark-e-vafaa kaa gumaa;N nahii;N

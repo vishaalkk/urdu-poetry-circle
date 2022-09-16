@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 7, 2021
-
 ---
 
 # dahr me;N naqsh-e vafaa vaj'h-e tasallii nah huaa

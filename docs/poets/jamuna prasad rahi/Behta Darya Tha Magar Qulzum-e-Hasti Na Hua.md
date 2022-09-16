@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 7, 2021
-
 ---
 
 # Behta Darya Tha Magar Qulzum-e-Hasti Na Hua

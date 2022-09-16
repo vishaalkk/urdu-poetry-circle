@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 30, 2021
-
 ---
 
 # Khuda Hafiz Musalmanon Ka Akbar

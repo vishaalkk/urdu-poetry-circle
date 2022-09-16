@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 11, 2022
-
 ---
 
 # gham raha jab tak kih dam men dam raha

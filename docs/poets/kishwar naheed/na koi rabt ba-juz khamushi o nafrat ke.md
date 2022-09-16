@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 22, 2022
-
 ---
 
 # na koi rabt ba-juz khamushi o nafrat ke

@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 25, 2020
-
 ---
 
 # Poshidah Poshidah

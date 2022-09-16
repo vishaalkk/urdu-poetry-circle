@@ -1,7 +1,5 @@
 ---
-
 Date Read: November 13, 2020
-
 ---
 
 # vuh firaq aur vuh visal kahan

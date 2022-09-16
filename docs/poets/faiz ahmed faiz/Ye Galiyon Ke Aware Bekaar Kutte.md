@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 24, 2020
-
 ---
 
 # Ye Galiyon Ke Aware Bekaar Kutte

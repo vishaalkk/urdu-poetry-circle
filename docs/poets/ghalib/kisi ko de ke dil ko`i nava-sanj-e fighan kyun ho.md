@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 10, 2021
-
 ---
 
 # kisi ko de ke dil ko`i nava-sanj-e fighan kyun ho

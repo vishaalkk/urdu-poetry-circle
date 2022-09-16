@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 30, 2021
-
 ---
 
 # khuda ali-gaDh ke madrase ko tamam amraz se shifa de

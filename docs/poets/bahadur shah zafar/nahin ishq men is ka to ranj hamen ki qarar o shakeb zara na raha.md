@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 1, 2022
-
 ---
 
 # nahin ishq men is ka to ranj hamen ki qarar o shakeb zara na raha

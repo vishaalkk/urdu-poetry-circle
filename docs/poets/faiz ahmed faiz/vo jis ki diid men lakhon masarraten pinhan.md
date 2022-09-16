@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 18, 2020
-
 ---
 
 # vo jis ki diid men lakhon masarraten pinhan

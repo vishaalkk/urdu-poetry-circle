@@ -1,7 +1,5 @@
 ---
-
 Date Read: August 28, 2020
-
 ---
 
 # is vaqt to yuun lagta hai ab kuchh bhi nahin hai

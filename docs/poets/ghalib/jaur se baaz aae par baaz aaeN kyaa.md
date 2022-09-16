@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 17, 2020
-
 ---
 
 # jaur se baaz aae par baaz aaeN kyaa

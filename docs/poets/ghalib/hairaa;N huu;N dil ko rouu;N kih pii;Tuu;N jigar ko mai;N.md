@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 19, 2021
-
 ---
 
 # hairaa;N huu;N dil ko rouu;N kih pii;Tuu;N jigar ko mai;N

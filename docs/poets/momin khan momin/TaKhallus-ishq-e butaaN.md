@@ -1,7 +1,5 @@
 ---
-
 Date Read: December 3, 2021
-
 ---
 
 # TaKhallus-ishq-e butaaN

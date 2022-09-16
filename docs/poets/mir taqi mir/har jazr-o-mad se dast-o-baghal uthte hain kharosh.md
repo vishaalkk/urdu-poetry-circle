@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 6, 2022
-
 ---
 
 # har jazr-o-mad se dast-o-baghal uthte hain kharosh

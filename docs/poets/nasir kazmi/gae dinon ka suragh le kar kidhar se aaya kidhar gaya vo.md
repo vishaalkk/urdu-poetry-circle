@@ -1,7 +1,5 @@
 ---
-
 Date Read: August 20, 2021
-
 ---
 
 # gae dinon ka suragh le kar kidhar se aaya kidhar gaya vo

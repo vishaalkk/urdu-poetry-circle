@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 3, 2021
-
 ---
 
 # na harif-e-jan na sharik-e-gham shab-e-intizar koi to ho

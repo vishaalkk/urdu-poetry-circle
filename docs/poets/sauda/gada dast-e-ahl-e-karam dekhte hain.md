@@ -1,7 +1,5 @@
 ---
-
 Date Read: November 26, 2021
-
 ---
 
 # gada dast-e-ahl-e-karam dekhte hain

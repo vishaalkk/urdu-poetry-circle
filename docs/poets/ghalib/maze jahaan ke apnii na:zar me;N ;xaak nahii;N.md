@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 2, 2021
-
 ---
 
 # maze jahaan ke apnii na:zar me;N ;xaak nahii;N

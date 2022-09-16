@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 23, 2021
-
 ---
 
 # tere tausan ko sabaa baa;Ndhte hai;N

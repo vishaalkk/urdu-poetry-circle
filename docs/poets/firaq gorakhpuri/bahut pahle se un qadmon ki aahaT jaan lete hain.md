@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 15, 2022
-
 ---
 
 # bahut pahle se un qadmon ki aahaT jaan lete hain

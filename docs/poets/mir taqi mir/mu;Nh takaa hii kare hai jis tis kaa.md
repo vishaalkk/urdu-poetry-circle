@@ -1,7 +1,5 @@
 ---
-
 Date Read: March 26, 2021
-
 ---
 
 # mu;Nh takaa hii kare hai jis tis kaa

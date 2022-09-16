@@ -1,7 +1,5 @@
 ---
-
 Date Read: August 6, 2021
-
 ---
 
 # Tere Aane Ka Intezar Raha

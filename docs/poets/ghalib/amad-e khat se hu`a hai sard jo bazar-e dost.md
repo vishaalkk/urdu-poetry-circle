@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 10, 2020
-
 ---
 
 # amad-e khat se hu`a hai sard jo bazar-e dost

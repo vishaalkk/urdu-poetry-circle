@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 24, 2020
-
 ---
 
 # hai baskih har ik un ke ishaare meiN nishaaN aur

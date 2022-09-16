@@ -1,7 +1,5 @@
 ---
-
 Date Read: August 6, 2021
-
 ---
 
 # hasad se dil agar afsurdah hai garm-e tamaashaa ho

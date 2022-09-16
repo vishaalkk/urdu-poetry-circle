@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 10, 2021
-
 ---
 
 # ai dekhne vaalo

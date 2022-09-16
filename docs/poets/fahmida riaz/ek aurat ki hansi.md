@@ -1,7 +1,5 @@
 ---
-
 Date Read: October 23, 2020
-
 ---
 
 # ek aurat ki hansi

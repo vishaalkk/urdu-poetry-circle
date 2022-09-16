@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 18, 2022
-
 ---
 
 # kya musibat-zadah dil ma`il-e azar nah tha

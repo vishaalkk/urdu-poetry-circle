@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 30, 2021
-
 ---
 
 # phuta kiye piyale lundhta phira qaraba

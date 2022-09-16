@@ -1,7 +1,5 @@
 ---
-
 Date Read: January 21, 2022
-
 ---
 
 # majlis-e-gham, na koi bazm-e-tarab, kya karte

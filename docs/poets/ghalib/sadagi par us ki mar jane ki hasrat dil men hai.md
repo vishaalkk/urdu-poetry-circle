@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 27, 2022
-
 ---
 
 # sadagi par us ki mar jane ki hasrat dil men hai

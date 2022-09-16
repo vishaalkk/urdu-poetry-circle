@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 16, 2021
-
 ---
 
 # sharma gae laja gae daman chhuDa gae

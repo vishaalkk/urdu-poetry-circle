@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 3, 2020
-
 ---
 
 # phir hu`a vaqt kih ho bal-kusha mauj-e sharab

@@ -1,7 +1,5 @@
 ---
-
 Date Read: April 1, 2022
-
 ---
 
 # 'ishq mujh ko nahin vahshat hi sahi

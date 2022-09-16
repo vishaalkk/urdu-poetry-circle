@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 22, 2022
-
 ---
 
 # dost! main dekh chuka taj-mahal

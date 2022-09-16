@@ -1,7 +1,5 @@
 ---
-
 Date Read: November 19, 2021
-
 ---
 
 # Doston Kya Kya Diwali Mein Nishat-o-Aish Hai

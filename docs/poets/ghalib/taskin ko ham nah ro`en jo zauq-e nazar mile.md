@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 17, 2022
-
 ---
 
 # taskin ko ham nah ro`en jo zauq-e nazar mile

@@ -1,7 +1,5 @@
 ---
-
 Date Read: October 9, 2020
-
 ---
 
 # Aziz Itna Hi Rakkho Ki Ji Sambhal Ja'e

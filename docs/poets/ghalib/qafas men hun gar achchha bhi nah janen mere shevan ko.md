@@ -1,7 +1,5 @@
 ---
-
 Date Read: September 10, 2021
-
 ---
 
 # qafas men hun gar achchha bhi nah janen mere shevan ko

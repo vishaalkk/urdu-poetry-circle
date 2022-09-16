@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 15, 2022
-
 ---
 
 # ham aap hii ko apnaa maqsuud jaante hai;N

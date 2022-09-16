@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 17, 2020
-
 ---
 
 # dil men ik lahr si uThi hai abhi 

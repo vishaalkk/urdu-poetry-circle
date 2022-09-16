@@ -1,7 +1,5 @@
 ---
-
 Date Read: May 27, 2022
-
 ---
 
 # tabiat in dinon begana-e-gham hoti jaati hai

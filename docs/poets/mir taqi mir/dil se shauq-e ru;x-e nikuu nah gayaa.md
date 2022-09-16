@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 25, 2021
-
 ---
 
 # dil se shauq-e ru;x-e nikuu nah gayaa

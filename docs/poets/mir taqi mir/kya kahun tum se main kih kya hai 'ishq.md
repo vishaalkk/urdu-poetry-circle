@@ -1,7 +1,5 @@
 ---
-
 Date Read: October 2, 2020
-
 ---
 
 # kya kahun tum se main kih kya hai 'ishq

@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 24, 2022
-
 ---
 
 # ko`i din gar zindagani aur hai

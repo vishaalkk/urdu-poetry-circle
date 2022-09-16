@@ -1,7 +1,5 @@
 ---
-
 Date Read: July 1, 2022
-
 ---
 
 # kaisa chaman asiri men kis ko udhar khayal

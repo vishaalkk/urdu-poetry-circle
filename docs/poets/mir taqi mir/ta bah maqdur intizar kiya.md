@@ -1,7 +1,5 @@
 ---
-
 Date Read: June 16, 2021
-
 ---
 
 # ta bah maqdur intizar kiya

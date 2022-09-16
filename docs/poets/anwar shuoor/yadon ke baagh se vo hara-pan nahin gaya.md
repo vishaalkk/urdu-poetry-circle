@@ -1,7 +1,5 @@
 ---
-
 Date Read: February 12, 2021
-
 ---
 
 # yadon ke baagh se vo hara-pan nahin gaya
