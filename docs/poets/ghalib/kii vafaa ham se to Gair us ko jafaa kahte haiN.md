@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: November 27, 2020
 
 ---
 
-
 # kii vafaa ham se to Gair us ko jafaa kahte haiN
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/086/index_086.html)
 
 ### Renditions & Recitations

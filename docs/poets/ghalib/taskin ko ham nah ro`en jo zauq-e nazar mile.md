@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 17, 2022
 
 ---
 
-
 # taskin ko ham nah ro`en jo zauq-e nazar mile
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/159/index_159.html)
 
 ### Renditions & Recitations

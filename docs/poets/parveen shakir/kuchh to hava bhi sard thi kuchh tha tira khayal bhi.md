@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: February 5, 2021
 
 ---
 
-
 # kuchh to hava bhi sard thi kuchh tha tira khayal bhi
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/kuchh-to-havaa-bhii-sard-thii-kuchh-thaa-tiraa-khayaal-bhii-parveen-shakir-ghazals?lang=ur)
 
 ### Renditions & Recitations

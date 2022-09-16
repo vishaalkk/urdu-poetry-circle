@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: April 10, 2020
 
 ---
 
-
 # zikr us parii-vash kaa aur phir bayaaN apnaa
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/043/index_043.html)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: January 1, 2021
 
 ---
 
-
 # aage baDhe na qissa-e-ishq-e-butan se ham
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/aage-badhe-na-qissa-e-ishq-e-butaan-se-ham-altaf-hussain-hali-ghazals-3?lang=ur)
 
 ### Renditions & Recitations

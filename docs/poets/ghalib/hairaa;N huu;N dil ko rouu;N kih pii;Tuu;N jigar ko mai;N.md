@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: February 19, 2021
 
 ---
 
-
 # hairaa;N huu;N dil ko rouu;N kih pii;Tuu;N jigar ko mai;N
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/099/index_099.html)
 
 ### Renditions & Recitations

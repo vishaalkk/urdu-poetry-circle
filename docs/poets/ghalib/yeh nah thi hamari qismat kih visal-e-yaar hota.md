@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: August 21, 2020
 
 ---
 
-
 # yeh nah thi hamari qismat kih visal-e-yaar hota
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/020/index_020.html)
 
 ### Renditions & Recitations

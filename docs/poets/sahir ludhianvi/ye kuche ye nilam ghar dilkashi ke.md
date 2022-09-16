@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: December 10, 2021
 
 ---
 
-
 # ye kuche ye nilam ghar dilkashi ke
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/nazms/chakle-ye-kuuche-ye-niilaam-ghar-dilkashii-ke-sahir-ludhianvi-nazms?lang=ur)
 
 ### Renditions & Recitations

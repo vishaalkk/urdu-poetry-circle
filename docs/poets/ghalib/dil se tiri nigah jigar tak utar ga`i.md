@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 10, 2022
 
 ---
 
-
 # dil se tiri nigah jigar tak utar ga`i
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/158/index_158.html)
 
 ### Renditions & Recitations

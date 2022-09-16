@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: December 11, 2020
 
 ---
 
-
 # ham par jafaa se tark-e-vafaa kaa gumaa;N nahii;N
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/091/index_091.html)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: September 25, 2020
 
 ---
 
-
 # rukh-e nigar se hai soz-e javidani-e sham'a
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/075/index_075.html)
 
 ### Renditions & Recitations

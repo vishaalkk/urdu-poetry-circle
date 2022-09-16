@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: March 26, 2021
 
 ---
 
-
 # gul ke hone ki tavaqqo pe jiye baiThi hai
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/gul-ke-hone-kii-tavaqqo-pe-jiye-baithii-hai-mah-laqa-chanda-ghazals?lang=ur)
 
 ### Renditions & Recitations

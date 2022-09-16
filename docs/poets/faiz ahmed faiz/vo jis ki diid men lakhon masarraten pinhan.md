@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: September 18, 2020
 
 ---
 
-
 # vo jis ki diid men lakhon masarraten pinhan
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/nazms/ek-rah-guzar-par-faiz-ahmad-faiz-nazms?lang=ur)
 
 ### Renditions & Recitations

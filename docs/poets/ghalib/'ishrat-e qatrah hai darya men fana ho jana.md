@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: April 24, 2020
 
 ---
 
-
 # 'ishrat-e qatrah hai darya men fana ho jana
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/048/index_048.html)
 
 ### Renditions & Recitations

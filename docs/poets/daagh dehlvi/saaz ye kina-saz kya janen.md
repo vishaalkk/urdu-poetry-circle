@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: November 20, 2020
 
 ---
 
-
 # saaz ye kina-saz kya janen
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/saaz-ye-kiina-saaz-kyaa-jaanen-dagh-dehlvi-ghazals?lang=ur)
 
 ### Renditions & Recitations

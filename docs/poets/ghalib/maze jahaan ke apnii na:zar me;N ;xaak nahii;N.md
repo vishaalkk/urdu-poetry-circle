@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: July 2, 2021
 
 ---
 
-
 # maze jahaan ke apnii na:zar me;N ;xaak nahii;N
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/114/index_114.html)
 
 ### Renditions & Recitations

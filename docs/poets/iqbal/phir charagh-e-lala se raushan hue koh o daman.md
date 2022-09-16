@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 19, 2020
 
 ---
 
-
 # phir charagh-e-lala se raushan hue koh o daman
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/phir-charaag-e-laala-se-raushan-hue-koh-o-daman-allama-iqbal-ghazals-3)
 
 ### Renditions & Recitations

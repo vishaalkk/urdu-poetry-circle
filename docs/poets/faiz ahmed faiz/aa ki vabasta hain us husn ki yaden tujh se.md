@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: February 26, 2021
 
 ---
 
-
 # aa ki vabasta hain us husn ki yaden tujh se
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/nazms/raqiib-se-aa-ki-vaabasta-hain-us-husn-kii-yaaden-tujh-se-faiz-ahmad-faiz-nazms?lang=ur)
 
 ### Renditions & Recitations

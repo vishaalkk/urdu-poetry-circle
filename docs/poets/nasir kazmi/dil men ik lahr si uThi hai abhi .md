@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: May 17, 2020
 
 ---
 
-
 # dil men ik lahr si uThi hai abhi 
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/dil-men-ik-lahr-sii-uthii-hai-abhii-nasir-kazmi-ghazals?lang=ur)
 
 ### Renditions & Recitations

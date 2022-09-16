@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: September 10, 2021
 
 ---
 
-
 # ai dekhne vaalo
 
-
 ### Text
-
 [Rekhta](https://rekhta.org/nazms/krishn-kanhayyaa-hafeez-jalandhari-nazms?lang=ur)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: January 8, 2021
 
 ---
 
-
 # Kabhi Ae Haqeeqat-e-Muntazar Nazar Aa Libas-e-Majaaz Mein
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00urdu/iqbal/kabhiay.html)
 
 ### Renditions & Recitations

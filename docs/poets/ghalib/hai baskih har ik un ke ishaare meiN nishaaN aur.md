@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: July 24, 2020
 
 ---
 
-
 # hai baskih har ik un ke ishaare meiN nishaaN aur
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/062/index_062.html)
 
 ### Renditions & Recitations

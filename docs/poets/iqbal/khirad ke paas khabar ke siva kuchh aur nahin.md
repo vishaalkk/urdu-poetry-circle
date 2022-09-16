@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 17, 2022
 
 ---
 
-
 # khirad ke paas khabar ke siva kuchh aur nahin
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/khirad-ke-paas-khabar-ke-sivaa-kuchh-aur-nahiin-allama-iqbal-ghazals?lang=ur)
 
 ### Renditions & Recitations

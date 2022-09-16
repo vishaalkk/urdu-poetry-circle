@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 18, 2021
 
 ---
 
-
 # fikr hi Thahri to dil ko fikr-e-khuban kyuun na ho
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/fikr-hii-thahrii-to-dil-ko-fikr-e-khuubaan-kyuun-na-ho-josh-malihabadi-ghazals?lang=ur)
 
 ### Renditions & Recitations

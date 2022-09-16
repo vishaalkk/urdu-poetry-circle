@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 24, 2022
 
 ---
 
-
 # ko`i din gar zindagani aur hai
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/160/index_160.html)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: August 21, 2020
 
 ---
 
-
 # Tujhe Adam Nahin Milta Khuda Ki Justaju Kaisi
 
-
 ### Text
-
 ### Renditions & Recitations
 
 #### Asad Amanat Ali Khan

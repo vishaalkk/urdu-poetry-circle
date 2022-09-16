@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: August 28, 2020
 
 ---
 
-
 # phir koi aaya dil-e-zar nahin koi nahin
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/nazms/tanhaaii-phir-koii-aayaa-dil-e-zaar-nahiin-koii-nahiin-faiz-ahmad-faiz-nazms?lang=ur  )
 
 ### Renditions & Recitations

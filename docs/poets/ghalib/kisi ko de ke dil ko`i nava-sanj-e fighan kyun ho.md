@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: December 10, 2021
 
 ---
 
-
 # kisi ko de ke dil ko`i nava-sanj-e fighan kyun ho
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/126/index_126.html)
 
 ### Renditions & Recitations

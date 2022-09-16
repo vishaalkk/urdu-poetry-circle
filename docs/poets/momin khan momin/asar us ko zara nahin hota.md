@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: December 3, 2021
 
 ---
 
-
 # asar us ko zara nahin hota
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/asar-us-ko-zaraa-nahiin-hotaa-momin-khan-momin-ghazals?lang=ur)
 
 ### Renditions & Recitations

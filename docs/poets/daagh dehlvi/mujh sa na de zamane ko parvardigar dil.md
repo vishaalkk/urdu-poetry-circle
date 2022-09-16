@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: September 17, 2021
 
 ---
 
-
 # mujh sa na de zamane ko parvardigar dil
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/mujh-saa-na-de-zamaane-ko-parvardigaar-dil-dagh-dehlvi-ghazals?lang=ur)
 
 ### Renditions & Recitations

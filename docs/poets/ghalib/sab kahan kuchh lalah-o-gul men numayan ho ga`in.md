@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 4, 2021
 
 ---
 
-
 # sab kahan kuchh lalah-o-gul men numayan ho ga`in
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/111/index_111.html)
 
 ### Renditions & Recitations

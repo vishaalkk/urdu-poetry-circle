@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: October 9, 2020
 
 ---
 
-
 # Aziz Itna Hi Rakkho Ki Ji Sambhal Ja'e
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/aziiz-itnaa-hii-rakkho-ki-jii-sambhal-jaae-obaidullah-aleem-ghazals?)
 
 ### Renditions & Recitations

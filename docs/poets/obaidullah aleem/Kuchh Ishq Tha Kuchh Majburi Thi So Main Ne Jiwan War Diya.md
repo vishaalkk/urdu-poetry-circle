@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: October 9, 2020
 
 ---
 
-
 # Kuchh Ishq Tha Kuchh Majburi Thi So Main Ne Jiwan War Diya
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/kuchh-ishq-thaa-kuchh-majbuurii-thii-so-main-ne-jiivan-vaar-diyaa-obaidullah-aleem-ghazals?)
 
 ### Renditions & Recitations

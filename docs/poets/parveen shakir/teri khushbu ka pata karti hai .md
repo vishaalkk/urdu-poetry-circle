@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 3, 2022
 
 ---
 
-
 # teri khushbu ka pata karti hai 
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/terii-khushbuu-kaa-pataa-kartii-hai-parveen-shakir-ghazals?lang=ur)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: November 26, 2021
 
 ---
 
-
 # jahan tera naqsh-e qadam dekhte hain
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/096/index_096.html)
 
 ### Renditions & Recitations

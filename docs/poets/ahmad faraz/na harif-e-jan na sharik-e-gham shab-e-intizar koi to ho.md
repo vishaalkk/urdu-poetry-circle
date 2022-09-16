@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: September 3, 2021
 
 ---
 
-
 # na harif-e-jan na sharik-e-gham shab-e-intizar koi to ho
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/na-hariif-e-jaan-na-shariik-e-gam-shab-e-intizaar-koii-to-ho-ahmad-faraz-ghazals?lang=ur)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: April 15, 2022
 
 ---
 
-
 # kabhi sunte hain aql-o-hosh ki aur kam bhi piite hain
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/kabhii-sunte-hain-aql-o-hosh-kii-aur-kam-bhii-piite-hain-nushur-wahidi-ghazals?lang=ur)
 
 ### Renditions & Recitations

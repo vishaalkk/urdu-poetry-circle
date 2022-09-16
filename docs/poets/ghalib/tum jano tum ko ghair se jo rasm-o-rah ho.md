@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: October 29, 2021
 
 ---
 
-
 # tum jano tum ko ghair se jo rasm-o-rah ho
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/124/index_124.html)
 
 ### Renditions & Recitations

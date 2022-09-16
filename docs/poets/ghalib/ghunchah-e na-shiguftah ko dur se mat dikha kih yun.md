@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: July 23, 2021
 
 ---
 
-
 # ghunchah-e na-shiguftah ko dur se mat dikha kih yun
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/116/index_116.html)
 
 ### Renditions & Recitations

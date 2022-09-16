@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: June 19, 2020
 
 ---
 
-
 # phir is andaaz se bahaar aaii
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/181/index_181.html)
 
 ### Renditions & Recitations

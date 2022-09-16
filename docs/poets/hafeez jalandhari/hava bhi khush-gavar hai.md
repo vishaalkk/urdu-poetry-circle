@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: August 13, 2021
 
 ---
 
-
 # hava bhi khush-gavar hai
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/nazms/abhii-to-main-javaan-huun-havaa-bhii-khush-gavaar-hai-hafeez-jalandhari-nazms?lang=ur)
 
 ### Renditions & Recitations

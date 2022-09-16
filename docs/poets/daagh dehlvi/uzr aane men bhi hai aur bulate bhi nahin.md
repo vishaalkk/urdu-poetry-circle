@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: February 11, 2022
 
 ---
 
-
 # uzr aane men bhi hai aur bulate bhi nahin
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/uzr-aane-men-bhii-hai-aur-bulaate-bhii-nahiin-dagh-dehlvi-ghazals-3?lang=ur)
 
 ### Renditions & Recitations

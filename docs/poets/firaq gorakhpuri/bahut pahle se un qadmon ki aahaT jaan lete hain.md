@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: July 15, 2022
 
 ---
 
-
 # bahut pahle se un qadmon ki aahaT jaan lete hain
 
-
 ### Text
-
 [Rekhta](https://www.rekhta.org/ghazals/bahut-pahle-se-un-qadmon-kii-aahat-jaan-lete-hain-firaq-gorakhpuri-ghazals?lang=ur)
 
 ### Renditions & Recitations

@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: October 23, 2020
 
 ---
 
-
 # aah ko chaahiye ik umr asar hote tak
 
-
 ### Text
-
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/078/index_078.html)
 
 ### Renditions & Recitations

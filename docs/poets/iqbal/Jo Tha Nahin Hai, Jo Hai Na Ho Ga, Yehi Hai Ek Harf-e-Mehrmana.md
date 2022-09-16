@@ -1,16 +1,12 @@
-
 ---
 
 Date Read: July 30, 2021
 
 ---
 
-
 # Jo Tha Nahin Hai, Jo Hai Na Ho Ga, Yehi Hai Ek Harf-e-Mehrmana
 
-
 ### Text
-
 [Rekhta](http://iqbalurdu.blogspot.com/2011/04/bal-e-jibril-143-zamana.html)
 
 ### Renditions & Recitations
