@@ -7,9 +7,7 @@ theme:
         - search.suggest
         - search.share
 plugins:
-    - search:
-        prebuild_index: true
-        indexing: 'full'
+    - search
     - awesome-pages
 markdown_extensions:
   - meta
