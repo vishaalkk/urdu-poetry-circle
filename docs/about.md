@@ -10,7 +10,7 @@
 Frances Pritchett teaches and writes about modern South Asian literature, especially Urdu poetry. She received her Ph.D. from the University of Chicago in South Asian Languages and Civilizations in 1981 and has taught at Columbia since 1982.  Her books include [Nets of Awareness: Urdu Poetry and Its Critics](https://publishing.cdlib.org/ucpressebooks/view?docId=ft10000326&brand=ucpress). (University of California Press, 1994); The Romance Tradition in Urdu: Adventures from the Dastan of Amir Hamzah (Columbia University Press, 1991); and (with Khaliq Ahmad Khaliq), [Urdu Meter: A Practical Handbook](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/meterbk/00_intro.html) (University of Wisconsin, 1987).
 
 She is currently working on a commentary on the entire collection of Urdu poetry of Mirza Asadullah Khan (1797-1869). This work-in-progress in available online as [A Desertful of Roses: the Urdu Ghazals of Mirza Asadullah Khan “Ghalib“](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/index.html).
-### Mushtaq Farda (Group Coordinator)
+### Mushtaq Fadra (Group Coordinator)
 
 ### Tabinda
 
