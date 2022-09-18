@@ -71,7 +71,7 @@ def generate_others(item: dict, file):
 def generate_md(file_path: str):
     rows = read_file(file_path)
     for item in rows:
-        poet_path = Path.joinpath(directory_path, item['Poet'].lower())
+        poet_path = Path.joinpath(directory_path, item['Poet'])
         poet_path.mkdir(exist_ok=True)
         ghazal = item['Ghazal/Nazm']
         ghazal = ghazal.replace('.', '')  # ghazals with . in them
