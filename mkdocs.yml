@@ -1,22 +1,41 @@
-site_name: Urdu Poetry Circle
+site_name: Columbia Urdu Poetry Group
 site_url: https://example.com/
 theme:
     name: material
+    palette:
+        - scheme: default
+          primary: teal
+          toggle:
+            icon: material/brightness-7 
+            name: Switch to dark mode
+        - scheme: slate
+          primary: teal
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
     features:
+        - navigation.instant
+        - navigation.tracking
+        - toc.follow
         - tabs
         - search.suggest
         - search.share
+        - search.highlight
+        - header.autohide
 plugins:
     - search
     - awesome-pages
 markdown_extensions:
   - meta
   - toc:
-      permalink: 📃
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify_cased
   - smarty
+  - tables
   - admonition
   - footnotes
   - pymdownx.details
+  - pymdownx.betterem
   - pymdownx.magiclink
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji

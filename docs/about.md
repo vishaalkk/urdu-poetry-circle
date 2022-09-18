@@ -12,7 +12,13 @@ Frances Pritchett teaches and writes about modern South Asian literature, especi
 She is currently working on a commentary on the entire collection of Urdu poetry of Mirza Asadullah Khan (1797-1869). This work-in-progress in available online as [A Desertful of Roses: the Urdu Ghazals of Mirza Asadullah Khan “Ghalib“](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/index.html).
 ### Mushtaq Fadra (Group Coordinator)
 
-### Tabinda
+### Tabinda Khan
+
+
+### Dalpat Rajpurohit
+
+
+### Adeeba Talukdar
 
 
 ### Zahra Sabri 
