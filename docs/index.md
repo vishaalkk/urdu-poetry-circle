@@ -1,8 +1,8 @@
 ---
-title: Columbia Urdu Poetry Circle
+title: Columbia Urdu Poetry Group
 ---
 
-# Welcome to Columbia Urdu Poetry Circle :octicons-heart-fill-24:{ .heart }
+# Welcome to Columbia Urdu Poetry Group :octicons-heart-fill-24:{ .heart }
 
 
 
