@@ -2,7 +2,7 @@ name: Deploy MkDocs
 on:
   push:
     paths:
-      - "docs/"
+      # - "docs/"
       - ".yml"
     branches:
       - main
