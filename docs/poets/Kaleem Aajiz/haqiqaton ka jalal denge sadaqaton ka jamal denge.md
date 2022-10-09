@@ -1,7 +1,7 @@
-***
-Date Read: July 2, 2021
-***
-
+---
+tags:
+  - 2021-07-02
+---
 # haqiqaton ka jalal denge sadaqaton ka jamal denge
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: October 8, 2021
-***
-
+---
+tags:
+  - 2021-10-08
+---
 # mujh par hai yih naz' kaa 'aalam ko'ii dam aur
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: July 17, 2020
-***
-
+---
+tags:
+  - 2020-07-17
+---
 # larazta hai mira dil zahmat-e mihr-e darakhshan par
 
 ### Text

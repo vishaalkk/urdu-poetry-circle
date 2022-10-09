@@ -1,7 +1,7 @@
-***
-Date Read: September 10, 2021
-***
-
+---
+tags:
+  - 2021-09-10
+---
 # qafas men hun gar achchha bhi nah janen mere shevan ko
 
 ### Text

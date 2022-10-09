@@ -1,7 +1,7 @@
-***
-Date Read: September 25, 2020
-***
-
+---
+tags:
+  - 2020-09-25
+---
 # rukh-e nigar se hai soz-e javidani-e sham'a
 
 ### Text

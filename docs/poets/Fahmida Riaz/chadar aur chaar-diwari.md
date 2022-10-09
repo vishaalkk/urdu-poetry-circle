@@ -1,7 +1,7 @@
-***
-Date Read: October 23, 2020
-***
-
+---
+tags:
+  - 2020-10-23
+---
 # chadar aur chaar-diwari
 
 ### Text

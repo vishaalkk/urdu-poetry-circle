@@ -1,7 +1,7 @@
-***
-Date Read: October 16, 2020
-***
-
+---
+tags:
+  - 2020-10-16
+---
 # zakhm par chhirken kahan tiflan-e be-parva namak
 
 ### Text

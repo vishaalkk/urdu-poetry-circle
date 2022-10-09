@@ -1,7 +1,7 @@
-***
-Date Read: May 21, 2021
-***
-
+---
+tags:
+  - 2021-05-21
+---
 # farhaad haath teshe pah Tuk rah ke Daaltaa
 
 ### Text

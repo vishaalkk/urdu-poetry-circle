@@ -1,7 +1,7 @@
-***
-Date Read: July 24, 2020
-***
-
+---
+tags:
+  - 2020-07-24
+---
 # hai baskih har ik un ke ishaare meiN nishaaN aur
 
 ### Text

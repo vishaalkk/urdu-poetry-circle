@@ -1,7 +1,7 @@
-***
-Date Read: June 25, 2021
-***
-
+---
+tags:
+  - 2021-06-25
+---
 # ye baten jhuTi baten hain ye logon ne phailai hain
 
 ### Text

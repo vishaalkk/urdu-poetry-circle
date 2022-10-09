@@ -1,7 +1,7 @@
-***
-Date Read: July 22, 2022
-***
-
+---
+tags:
+  - 2022-07-22
+---
 # ik shahanshah ne banva ke hasin taj-mahal
 
 ### Text

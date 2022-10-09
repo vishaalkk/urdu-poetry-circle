@@ -1,7 +1,7 @@
-***
-Date Read: September 4, 2020
-***
-
+---
+tags:
+  - 2020-09-04
+---
 # vus'at-e sa'i-e karam dekh kih sar-ta-sar-e khak
 
 ### Text

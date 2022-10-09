@@ -1,7 +1,7 @@
-***
-Date Read: November 6, 2020
-***
-
+---
+tags:
+  - 2020-11-06
+---
 # mujh ko mere nasib ne roz-e-azal se kya diya
 
 ### Text

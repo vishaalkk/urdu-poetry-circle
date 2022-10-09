@@ -1,7 +1,7 @@
-***
-Date Read: April 1, 2022
-***
-
+---
+tags:
+  - 2022-04-01
+---
 # darhi safed shaikh ki tu mat nazar men kar
 
 ### Text

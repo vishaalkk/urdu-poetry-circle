@@ -1,7 +1,7 @@
-***
-Date Read: October 2, 2020
-***
-
+---
+tags:
+  - 2020-10-02
+---
 # mihr-e qiyamat chahat afat fitnah fasad bala hai 'ishq
 
 ### Text

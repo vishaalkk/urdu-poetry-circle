@@ -1,7 +1,7 @@
-***
-Date Read: August 27, 2021
-***
-
+---
+tags:
+  - 2021-08-27
+---
 # ku-e-sitam ki khamushi abad kuchh to ho
 
 ### Text

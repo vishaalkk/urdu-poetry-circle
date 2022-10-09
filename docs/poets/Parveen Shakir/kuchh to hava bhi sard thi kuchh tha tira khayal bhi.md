@@ -1,7 +1,7 @@
-***
-Date Read: February 5, 2021
-***
-
+---
+tags:
+  - 2021-02-05
+---
 # kuchh to hava bhi sard thi kuchh tha tira khayal bhi
 
 ### Text

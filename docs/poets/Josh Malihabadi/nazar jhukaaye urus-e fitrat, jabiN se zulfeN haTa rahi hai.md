@@ -1,7 +1,7 @@
-***
-Date Read: May 28, 2021
-***
-
+---
+tags:
+  - 2021-05-28
+---
 # nazar jhukaaye urus-e fitrat, jabiN se zulfeN haTa rahi hai
 
 ### Text

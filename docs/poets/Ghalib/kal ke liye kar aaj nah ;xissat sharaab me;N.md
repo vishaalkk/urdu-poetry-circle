@@ -1,7 +1,7 @@
-***
-Date Read: January 29, 2021
-***
-
+---
+tags:
+  - 2021-01-29
+---
 # kal ke liye kar aaj nah ;xissat sharaab me;N
 
 ### Text

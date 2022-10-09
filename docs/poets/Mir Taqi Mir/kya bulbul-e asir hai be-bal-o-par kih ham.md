@@ -1,7 +1,7 @@
-***
-Date Read: July 8, 2022
-***
-
+---
+tags:
+  - 2022-07-08
+---
 # kya bulbul-e asir hai be-bal-o-par kih ham
 
 ### Text

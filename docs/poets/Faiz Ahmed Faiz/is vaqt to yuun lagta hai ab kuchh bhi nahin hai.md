@@ -1,7 +1,7 @@
-***
-Date Read: August 28, 2020
-***
-
+---
+tags:
+  - 2020-08-28
+---
 # is vaqt to yuun lagta hai ab kuchh bhi nahin hai
 
 ### Text

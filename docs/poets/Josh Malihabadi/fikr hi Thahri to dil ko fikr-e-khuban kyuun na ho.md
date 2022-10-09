@@ -1,7 +1,7 @@
-***
-Date Read: June 18, 2021
-***
-
+---
+tags:
+  - 2021-06-18
+---
 # fikr hi Thahri to dil ko fikr-e-khuban kyuun na ho
 
 ### Text

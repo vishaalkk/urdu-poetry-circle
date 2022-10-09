@@ -1,7 +1,7 @@
-***
-Date Read: February 5, 2021
-***
-
+---
+tags:
+  - 2021-02-05
+---
 # main faqat chalti rahi manzil ko sar us ne kiya
 
 ### Text

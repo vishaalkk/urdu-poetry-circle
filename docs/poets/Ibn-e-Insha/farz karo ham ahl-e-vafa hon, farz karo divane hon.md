@@ -1,7 +1,7 @@
-***
-Date Read: October 15, 2021
-***
-
+---
+tags:
+  - 2021-10-15
+---
 # farz karo ham ahl-e-vafa hon, farz karo divane hon
 
 ### Text

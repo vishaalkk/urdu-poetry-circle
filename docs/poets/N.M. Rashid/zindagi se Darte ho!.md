@@ -1,7 +1,7 @@
-***
-Date Read: April 8, 2022
-***
-
+---
+tags:
+  - 2022-04-08
+---
 # zindagi se Darte ho!
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: July 15, 2022
-***
-
+---
+tags:
+  - 2022-07-15
+---
 # bahut pahle se un qadmon ki aahaT jaan lete hain
 
 ### Text

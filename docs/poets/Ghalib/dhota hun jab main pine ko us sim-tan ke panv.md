@@ -1,7 +1,7 @@
-***
-Date Read: October 1, 2021
-***
-
+---
+tags:
+  - 2021-10-01
+---
 # dhota hun jab main pine ko us sim-tan ke panv
 
 ### Text

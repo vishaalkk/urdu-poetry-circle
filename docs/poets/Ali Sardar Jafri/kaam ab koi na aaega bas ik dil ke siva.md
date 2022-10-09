@@ -1,7 +1,7 @@
-***
-Date Read: October 30, 2020
-***
-
+---
+tags:
+  - 2020-10-30
+---
 # kaam ab koi na aaega bas ik dil ke siva
 
 ### Text

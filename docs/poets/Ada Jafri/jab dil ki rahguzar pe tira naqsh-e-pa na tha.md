@@ -1,7 +1,7 @@
-***
-Date Read: January 14, 2022
-***
-
+---
+tags:
+  - 2022-01-14
+---
 # jab dil ki rahguzar pe tira naqsh-e-pa na tha
 
 ### Text

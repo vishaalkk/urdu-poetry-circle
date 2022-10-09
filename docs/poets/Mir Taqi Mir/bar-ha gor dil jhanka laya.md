@@ -1,7 +1,7 @@
-***
-Date Read: January 7, 2022
-***
-
+---
+tags:
+  - 2022-01-07
+---
 # bar-ha gor dil jhanka laya
 
 ### Text

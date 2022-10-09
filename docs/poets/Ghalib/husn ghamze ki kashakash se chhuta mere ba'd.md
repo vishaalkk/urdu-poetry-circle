@@ -1,7 +1,7 @@
-***
-Date Read: May 17, 2020
-***
-
+---
+tags:
+  - 2020-05-17
+---
 # husn ghamze ki kashakash se chhuta mere ba'd
 
 ### Text

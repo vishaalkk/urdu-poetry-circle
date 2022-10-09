@@ -1,7 +1,7 @@
-***
-Date Read: May 29, 2020
-***
-
+---
+tags:
+  - 2020-05-29
+---
 # bala se hain jo bah pesh-e nazar dar-o-divar
 
 ### Text

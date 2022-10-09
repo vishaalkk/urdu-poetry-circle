@@ -1,7 +1,7 @@
-***
-Date Read: July 31, 2020
-***
-
+---
+tags:
+  - 2020-07-31
+---
 # laazim tha kih dekho mera rasta koi din aur
 
 ### Text

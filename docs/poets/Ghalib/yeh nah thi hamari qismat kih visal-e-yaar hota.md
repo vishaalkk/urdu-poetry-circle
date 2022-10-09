@@ -1,7 +1,7 @@
-***
-Date Read: August 21, 2020
-***
-
+---
+tags:
+  - 2020-08-21
+---
 # yeh nah thi hamari qismat kih visal-e-yaar hota
 
 ### Text

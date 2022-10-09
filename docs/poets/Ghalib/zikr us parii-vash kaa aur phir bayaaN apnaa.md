@@ -1,7 +1,7 @@
-***
-Date Read: April 10, 2020
-***
-
+---
+tags:
+  - 2020-04-10
+---
 # zikr us parii-vash kaa aur phir bayaaN apnaa
 
 ### Text

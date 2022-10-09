@@ -1,7 +1,7 @@
-***
-Date Read: January 22, 2021
-***
-
+---
+tags:
+  - 2021-01-22
+---
 # miltii hai xuu-e yaar se naar iltihaab me;N
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: June 25, 2021
-***
-
+---
+tags:
+  - 2021-06-25
+---
 # dil se shauq-e ru;x-e nikuu nah gayaa
 
 ### Text

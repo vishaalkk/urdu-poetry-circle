@@ -1,7 +1,7 @@
-***
-Date Read: November 27, 2020
-***
-
+---
+tags:
+  - 2020-11-27
+---
 # kya hue bad-e-bayaban ke pukare hue log
 
 ### Text

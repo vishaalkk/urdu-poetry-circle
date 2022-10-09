@@ -1,7 +1,7 @@
-***
-Date Read: August 21, 2020
-***
-
+---
+tags:
+  - 2020-08-21
+---
 # Tujhe Adam Nahin Milta Khuda Ki Justaju Kaisi
 
 ### Text

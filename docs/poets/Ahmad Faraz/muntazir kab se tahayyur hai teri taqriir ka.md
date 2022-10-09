@@ -1,7 +1,7 @@
-***
-Date Read: October 29, 2021
-***
-
+---
+tags:
+  - 2021-10-29
+---
 # muntazir kab se tahayyur hai teri taqriir ka
 
 ### Text

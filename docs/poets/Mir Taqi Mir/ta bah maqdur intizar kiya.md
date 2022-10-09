@@ -1,7 +1,7 @@
-***
-Date Read: June 16, 2021
-***
-
+---
+tags:
+  - 2021-06-16
+---
 # ta bah maqdur intizar kiya
 
 ### Text

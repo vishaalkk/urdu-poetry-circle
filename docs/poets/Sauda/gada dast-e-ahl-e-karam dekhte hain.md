@@ -1,7 +1,7 @@
-***
-Date Read: November 26, 2021
-***
-
+---
+tags:
+  - 2021-11-26
+---
 # gada dast-e-ahl-e-karam dekhte hain
 
 ### Text

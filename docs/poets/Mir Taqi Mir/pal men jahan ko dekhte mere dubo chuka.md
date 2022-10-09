@@ -1,7 +1,7 @@
-***
-Date Read: February 4, 2022
-***
-
+---
+tags:
+  - 2022-02-04
+---
 # pal men jahan ko dekhte mere dubo chuka
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: April 22, 2022
-***
-
+---
+tags:
+  - 2022-04-22
+---
 # us bazm men mujhe nahin banti haya kiye
 
 ### Text

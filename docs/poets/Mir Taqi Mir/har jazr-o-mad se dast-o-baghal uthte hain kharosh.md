@@ -1,7 +1,7 @@
-***
-Date Read: May 6, 2022
-***
-
+---
+tags:
+  - 2022-05-06
+---
 # har jazr-o-mad se dast-o-baghal uthte hain kharosh
 
 ### Text

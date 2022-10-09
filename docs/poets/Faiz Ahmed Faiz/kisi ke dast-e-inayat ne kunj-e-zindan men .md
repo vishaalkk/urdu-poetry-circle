@@ -1,7 +1,7 @@
-***
-Date Read: October 16, 2020
-***
-
+---
+tags:
+  - 2020-10-16
+---
 # kisi ke dast-e-inayat ne kunj-e-zindan men 
 
 ### Text

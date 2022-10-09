@@ -1,7 +1,7 @@
-***
-Date Read: July 30, 2021
-***
-
+---
+tags:
+  - 2021-07-30
+---
 # phuta kiye piyale lundhta phira qaraba
 
 ### Text

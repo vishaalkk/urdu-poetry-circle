@@ -1,7 +1,7 @@
-***
-Date Read: April 29, 2022
-***
-
+---
+tags:
+  - 2022-04-29
+---
 # raftar-e 'umr qat'-e rah-e iztirab hai
 
 ### Text

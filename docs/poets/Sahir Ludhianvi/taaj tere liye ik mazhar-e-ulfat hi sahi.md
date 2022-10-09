@@ -1,7 +1,7 @@
-***
-Date Read: July 22, 2022
-***
-
+---
+tags:
+  - 2022-07-22
+---
 # taaj tere liye ik mazhar-e-ulfat hi sahi
 
 ### Text

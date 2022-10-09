@@ -1,7 +1,7 @@
-***
-Date Read: February 18, 2022
-***
-
+---
+tags:
+  - 2022-02-18
+---
 # kya tang ham sitam-zadagan ka jahan hai
 
 ### Text

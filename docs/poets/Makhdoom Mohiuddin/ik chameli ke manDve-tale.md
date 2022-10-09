@@ -1,7 +1,7 @@
-***
-Date Read: March 5, 2021
-***
-
+---
+tags:
+  - 2021-03-05
+---
 # ik chameli ke manDve-tale
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: September 17, 2021
-***
-
+---
+tags:
+  - 2021-09-17
+---
 # mujh sa na de zamane ko parvardigar dil
 
 ### Text

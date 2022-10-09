@@ -1,7 +1,7 @@
-***
-Date Read: June 12, 2020
-***
-
+---
+tags:
+  - 2020-06-12
+---
 # Aik Manzar
 
 ### Text

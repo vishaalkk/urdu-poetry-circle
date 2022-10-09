@@ -1,7 +1,7 @@
-***
-Date Read: January 1, 2021
-***
-
+---
+tags:
+  - 2021-01-01
+---
 # aage baDhe na qissa-e-ishq-e-butan se ham
 
 ### Text

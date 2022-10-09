@@ -1,7 +1,7 @@
-***
-Date Read: September 18, 2020
-***
-
+---
+tags:
+  - 2020-09-18
+---
 # vo jis ki diid men lakhon masarraten pinhan
 
 ### Text

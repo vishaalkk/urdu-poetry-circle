@@ -1,8 +1,8 @@
-***
-Date Read: July 8, 2022
-***
-
-# ko`i ummid bar nahin ati
+---
+tags:
+  - 2022-07-08
+---
+# koi ummid bar nahin ati
 
 ### Text
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/161/index_161.html)

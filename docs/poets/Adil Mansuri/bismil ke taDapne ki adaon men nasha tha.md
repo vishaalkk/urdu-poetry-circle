@@ -1,7 +1,7 @@
-***
-Date Read: January 28, 2022
-***
-
+---
+tags:
+  - 2022-01-28
+---
 # bismil ke taDapne ki adaon men nasha tha
 
 ### Text

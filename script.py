@@ -10,7 +10,7 @@ import sys
 
 BASE_URL = "https://api.airtable.com/v0/appO8MBTJjB5BJNr9/Catalog"
 
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+# logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -124,7 +124,7 @@ def generate_others(item: dict, file) -> None:
 def format_date(dt: str) -> str:
     # Date from API is number
     parse_date = parse(dt)
-    desired_format = parse_date.strftime("%B %-d, %Y")
+    desired_format = parse_date.strftime("%Y-%m-%d")
     return desired_format
 
 
@@ -135,8 +135,9 @@ def generate_md_from_api(records: list, poets_dir_path: Path) -> list[str]:
         poet_path = Path.joinpath(poets_dir_path, fields["Poet"])
         poet_path.mkdir(exist_ok=True)
         ghazal = fields["Ghazal/Nazm"]
-        ghazal = ghazal.replace(".", "")  # ghazals with . in them
         ghazal = unidecode.unidecode(ghazal)  # remove accents
+        ghazal = ghazal.replace("ʾ", "")  # ghazals with . in them
+        ghazal = ghazal.replace(".", "")  # ghazals with . in them
         ghazal_path = Path.joinpath(poet_path, ghazal)
         logger.info(f"Generating Ghazal Markdown: {ghazal}")
         date_read = format_date(fields["Date"])
@@ -164,14 +165,18 @@ def generate_md_from_file(file_path: str, poets_dir_path: Path) -> None:
         poet_path = Path.joinpath(poets_dir_path, item["Poet"])
         poet_path.mkdir(exist_ok=True)
         ghazal = item["Ghazal/Nazm"]
-        ghazal = ghazal.replace(".", "")  # ghazals with . in them
+        ghazal = ghazal.replace(".", "")# ghazals with . in them
+        ghazal = ghazal.replace("ʾ", "")  # ghazals with . in them
         ghazal = unidecode.unidecode(ghazal)  # remove accents
+        print(ghazal)
         ghazal_path = Path.joinpath(poet_path, ghazal)
+        date_read = format_date(item["Date"])
         with open(ghazal_path.with_suffix(".md"), "w") as file:
             boiler_text = (
-                f"***\n"
-                f"Date Read: {item['Date']}\n"
-                f"***\n\n"
+                f"---\n"
+                f"tags:\n"
+                f"  - {date_read}\n"
+                f"---\n"
                 f"# {ghazal}\n\n"
                 f"### Text\n"
             )

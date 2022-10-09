@@ -1,7 +1,7 @@
-***
-Date Read: April 24, 2020
-***
-
+---
+tags:
+  - 2020-04-24
+---
 # 'ishrat-e qatrah hai darya men fana ho jana
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: August 21, 2020
-***
-
+---
+tags:
+  - 2020-08-21
+---
 # Az Husn-e-Malih-e-Khud Shor-e-Bajahan Kar Di
 
 ### Text

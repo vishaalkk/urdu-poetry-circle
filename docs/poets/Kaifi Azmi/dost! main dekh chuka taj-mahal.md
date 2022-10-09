@@ -1,7 +1,7 @@
-***
-Date Read: July 22, 2022
-***
-
+---
+tags:
+  - 2022-07-22
+---
 # dost! main dekh chuka taj-mahal
 
 ### Text

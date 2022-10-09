@@ -1,7 +1,7 @@
-***
-Date Read: May 27, 2022
-***
-
+---
+tags:
+  - 2022-05-27
+---
 # tabiat in dinon begana-e-gham hoti jaati hai
 
 ### Text

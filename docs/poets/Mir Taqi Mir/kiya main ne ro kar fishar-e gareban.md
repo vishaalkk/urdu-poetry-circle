@@ -1,7 +1,7 @@
-***
-Date Read: August 19, 2022
-***
-
+---
+tags:
+  - 2022-08-19
+---
 # kiya main ne ro kar fishar-e gareban
 
 ### Text

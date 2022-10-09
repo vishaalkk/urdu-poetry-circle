@@ -1,7 +1,7 @@
-***
-Date Read: February 19, 2021
-***
-
+---
+tags:
+  - 2021-02-19
+---
 # hairaa;N huu;N dil ko rouu;N kih pii;Tuu;N jigar ko mai;N
 
 ### Text

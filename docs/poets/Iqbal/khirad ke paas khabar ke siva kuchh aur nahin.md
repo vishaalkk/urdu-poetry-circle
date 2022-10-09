@@ -1,7 +1,7 @@
-***
-Date Read: June 17, 2022
-***
-
+---
+tags:
+  - 2022-06-17
+---
 # khirad ke paas khabar ke siva kuchh aur nahin
 
 ### Text

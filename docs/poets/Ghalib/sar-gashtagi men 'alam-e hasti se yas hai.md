@@ -1,7 +1,7 @@
-***
-Date Read: February 25, 2022
-***
-
+---
+tags:
+  - 2022-02-25
+---
 # sar-gashtagi men 'alam-e hasti se yas hai
 
 ### Text

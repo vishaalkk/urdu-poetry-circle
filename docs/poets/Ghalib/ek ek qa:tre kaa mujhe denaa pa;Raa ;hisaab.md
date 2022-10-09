@@ -1,7 +1,7 @@
-***
-Date Read: August 20, 2021
-***
-
+---
+tags:
+  - 2021-08-20
+---
 # ek ek qa:tre kaa mujhe denaa pa;Raa ;hisaab
 
 ### Text

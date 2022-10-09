@@ -1,7 +1,7 @@
-***
-Date Read: November 19, 2021
-***
-
+---
+tags:
+  - 2021-11-19
+---
 # Doston Kya Kya Diwali Mein Nishat-o-Aish Hai
 
 ### Text

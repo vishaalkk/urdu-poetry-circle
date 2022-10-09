@@ -1,7 +1,7 @@
-***
-Date Read: May 27, 2022
-***
-
+---
+tags:
+  - 2022-05-27
+---
 # sadagi par us ki mar jane ki hasrat dil men hai
 
 ### Text

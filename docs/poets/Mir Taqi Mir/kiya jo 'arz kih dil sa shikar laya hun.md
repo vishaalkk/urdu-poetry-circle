@@ -1,7 +1,7 @@
-***
-Date Read: July 29, 2022
-***
-
+---
+tags:
+  - 2022-07-29
+---
 # kiya jo 'arz kih dil sa shikar laya hun
 
 ### Text

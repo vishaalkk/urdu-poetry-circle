@@ -1,7 +1,7 @@
-***
-Date Read: October 1, 2021
-***
-
+---
+tags:
+  - 2021-10-01
+---
 # galyon men ab talak to mazkur hai hamara
 
 ### Text

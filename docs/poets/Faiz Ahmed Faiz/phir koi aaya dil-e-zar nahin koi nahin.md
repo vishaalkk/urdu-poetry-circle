@@ -1,7 +1,7 @@
-***
-Date Read: August 28, 2020
-***
-
+---
+tags:
+  - 2020-08-28
+---
 # phir koi aaya dil-e-zar nahin koi nahin
 
 ### Text

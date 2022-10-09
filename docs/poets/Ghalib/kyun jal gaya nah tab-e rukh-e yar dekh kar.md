@@ -1,7 +1,7 @@
-***
-Date Read: July 10, 2020
-***
-
+---
+tags:
+  - 2020-07-10
+---
 # kyun jal gaya nah tab-e rukh-e yar dekh kar
 
 ### Text

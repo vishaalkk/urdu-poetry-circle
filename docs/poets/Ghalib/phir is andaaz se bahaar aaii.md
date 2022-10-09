@@ -1,7 +1,7 @@
-***
-Date Read: June 19, 2020
-***
-
+---
+tags:
+  - 2020-06-19
+---
 # phir is andaaz se bahaar aaii
 
 ### Text

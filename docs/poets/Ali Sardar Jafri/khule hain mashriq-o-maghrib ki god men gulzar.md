@@ -1,7 +1,7 @@
-***
-Date Read: October 30, 2020
-***
-
+---
+tags:
+  - 2020-10-30
+---
 # khule hain mashriq-o-maghrib ki god men gulzar
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: July 2, 2021
-***
-
+---
+tags:
+  - 2021-07-02
+---
 # maze jahaan ke apnii na:zar me;N ;xaak nahii;N
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: July 23, 2021
-***
-
+---
+tags:
+  - 2021-07-23
+---
 # ghunchah-e na-shiguftah ko dur se mat dikha kih yun
 
 ### Text

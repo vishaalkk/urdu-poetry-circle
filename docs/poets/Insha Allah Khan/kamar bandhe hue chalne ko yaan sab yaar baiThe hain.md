@@ -1,7 +1,7 @@
-***
-Date Read: November 5, 2021
-***
-
+---
+tags:
+  - 2021-11-05
+---
 # kamar bandhe hue chalne ko yaan sab yaar baiThe hain
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: September 10, 2021
-***
-
+---
+tags:
+  - 2021-09-10
+---
 # ai dekhne vaalo
 
 ### Text

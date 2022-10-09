@@ -1,7 +1,7 @@
-***
-Date Read: November 27, 2020
-***
-
+---
+tags:
+  - 2020-11-27
+---
 # kii vafaa ham se to Gair us ko jafaa kahte haiN
 
 ### Text

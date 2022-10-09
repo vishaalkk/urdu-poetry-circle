@@ -1,7 +1,7 @@
-***
-Date Read: May 20, 2022
-***
-
+---
+tags:
+  - 2022-05-20
+---
 # kin lafzon men itni kaDvi itni kasili baat likhun
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: August 7, 2020
-***
-
+---
+tags:
+  - 2020-08-07
+---
 # Mauzu-e-Sukhan
 
 ### Text

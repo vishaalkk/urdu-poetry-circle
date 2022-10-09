@@ -1,7 +1,7 @@
-***
-Date Read: March 25, 2022
-***
-
+---
+tags:
+  - 2022-03-25
+---
 # ho admi ai charkh tark-e gardish-e ayyam kar
 
 ### Text

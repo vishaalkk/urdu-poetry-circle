@@ -1,7 +1,7 @@
-***
-Date Read: May 7, 2021
-***
-
+---
+tags:
+  - 2021-05-07
+---
 # dahr me;N naqsh-e vafaa vaj'h-e tasallii nah huaa
 
 ### Text

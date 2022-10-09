@@ -1,7 +1,7 @@
-***
-Date Read: January 1, 2021
-***
-
+---
+tags:
+  - 2021-01-01
+---
 # jahaa;N teraa naqsh-e qadam dekhte hai;N
 
 ### Text

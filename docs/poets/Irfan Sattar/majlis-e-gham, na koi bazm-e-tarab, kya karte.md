@@ -1,7 +1,7 @@
-***
-Date Read: January 21, 2022
-***
-
+---
+tags:
+  - 2022-01-21
+---
 # majlis-e-gham, na koi bazm-e-tarab, kya karte
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: May 20, 2022
-***
-
+---
+tags:
+  - 2022-05-20
+---
 # mir-e gum-kardah-chaman zamzamah-pardaz hai ek
 
 ### Text

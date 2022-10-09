@@ -1,7 +1,7 @@
-***
-Date Read: October 30, 2020
-***
-
+---
+tags:
+  - 2020-10-30
+---
 # hai kis qadar halaak-e-fareb-e vafaa-e-gul
 
 ### Text

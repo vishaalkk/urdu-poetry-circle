@@ -1,7 +1,7 @@
-***
-Date Read: July 3, 2020
-***
-
+---
+tags:
+  - 2020-07-03
+---
 # zulmat ko ziya sarsar ko saba bande ko khuda kya likhna
 
 ### Text

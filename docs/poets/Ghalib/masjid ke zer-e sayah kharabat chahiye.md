@@ -1,7 +1,7 @@
-***
-Date Read: January 14, 2022
-***
-
+---
+tags:
+  - 2022-01-14
+---
 # masjid ke zer-e sayah kharabat chahiye
 
 ### Text

@@ -1,7 +1,7 @@
-***
-Date Read: July 24, 2020
-***
-
+---
+tags:
+  - 2020-07-24
+---
 # Ye Galiyon Ke Aware Bekaar Kutte
 
 ### Text

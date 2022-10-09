@@ -1,7 +1,7 @@
-***
-Date Read: January 22, 2021
-***
-
+---
+tags:
+  - 2021-01-22
+---
 # laai hayat aae qaza le chali chale
 
 ### Text

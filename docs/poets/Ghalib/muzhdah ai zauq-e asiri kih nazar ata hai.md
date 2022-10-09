@@ -1,7 +1,7 @@
-***
-Date Read: September 18, 2020
-***
-
+---
+tags:
+  - 2020-09-18
+---
 # muzhdah ai zauq-e asiri kih nazar ata hai
 
 ### Text

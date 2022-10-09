@@ -1,7 +1,7 @@
-***
-Date Read: October 2, 2020
-***
-
+---
+tags:
+  - 2020-10-02
+---
 # log bahut puchha karte hain kya kahye myan kya hai 'ishq
 
 ### Text

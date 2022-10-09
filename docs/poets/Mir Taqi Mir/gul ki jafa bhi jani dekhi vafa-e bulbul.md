@@ -1,7 +1,7 @@
-***
-Date Read: June 24, 2022
-***
-
+---
+tags:
+  - 2022-06-24
+---
 # gul ki jafa bhi jani dekhi vafa-e bulbul
 
 ### Text

@@ -1,8 +1,8 @@
-***
-Date Read: July 29, 2022
-***
-
-# dil-e na-dan tujhe hu`a kya hai
+---
+tags:
+  - 2022-07-29
+---
+# dil-e na-dan tujhe hua kya hai
 
 ### Text
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/162/index_162.html)

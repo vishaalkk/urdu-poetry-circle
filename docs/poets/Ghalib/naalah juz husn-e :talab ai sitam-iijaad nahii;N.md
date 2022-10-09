@@ -1,7 +1,7 @@
-***
-Date Read: March 5, 2021
-***
-
+---
+tags:
+  - 2021-03-05
+---
 # naalah juz husn-e :talab ai sitam-iijaad nahii;N
 
 ### Text

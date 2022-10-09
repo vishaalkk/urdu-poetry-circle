@@ -1,7 +1,7 @@
-***
-Date Read: April 1, 2022
-***
-
+---
+tags:
+  - 2022-04-01
+---
 # 'ishq mujh ko nahin vahshat hi sahi
 
 ### Text

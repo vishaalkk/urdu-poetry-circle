@@ -1,7 +1,7 @@
-***
-Date Read: October 9, 2020
-***
-
+---
+tags:
+  - 2020-10-09
+---
 # Kuchh Ishq Tha Kuchh Majburi Thi So Main Ne Jiwan War Diya
 
 ### Text

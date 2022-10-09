@@ -1,7 +1,7 @@
-***
-Date Read: April 9, 2021
-***
-
+---
+tags:
+  - 2021-04-09
+---
 # dil laga kar lag gaya un ko bhi tanha baithna
 
 ### Text
