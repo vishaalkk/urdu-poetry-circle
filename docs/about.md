@@ -1,7 +1,7 @@
 # About
 
 ## History 
-
+Right from the beginning we have met as an informal group of friends; we have never wanted any 'baaRe aadmii' to lecture to us. What we have in common is a desire to enjoy Urdu poetry together, and to help each other understand it in more depth. Our readings have centered on the classical ghazal poets, above all Ghalib and Mir, but nowadays we are broadening our scope to include a wider range of poets, especially modern ones. Thanks to zoom, our group is now geographically wide-ranging. Most of us know Urdu script, but we also provide texts in Devanagari script. Our group includes native speakers from South Asia, diasporic 'heritage learners', and non-South-Asian students of Urdu at all levels. We all help each other, and we enjoy each other's company, and there's always that brilliant poetry to light up our Friday evenings.
 
 
 ## Bios

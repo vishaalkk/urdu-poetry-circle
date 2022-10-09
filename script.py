@@ -10,7 +10,7 @@ import sys
 
 BASE_URL = "https://api.airtable.com/v0/appO8MBTJjB5BJNr9/Catalog"
 
-# logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
