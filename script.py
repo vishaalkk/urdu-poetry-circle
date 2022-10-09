@@ -1,12 +1,13 @@
-import csv
-from pathlib import Path
-from typing import Any
-import unidecode
-from dateutil.parser import parse
-import requests
 import argparse
+import csv
 import logging
 import sys
+from pathlib import Path
+from typing import Any
+
+import requests
+import unidecode
+from dateutil.parser import parse
 
 BASE_URL = "https://api.airtable.com/v0/appO8MBTJjB5BJNr9/Catalog"
 
@@ -122,57 +123,29 @@ def generate_others(item: dict, file) -> None:
 
 
 def format_date(dt: str) -> str:
-    # Date from API is number
     parse_date = parse(dt)
     desired_format = parse_date.strftime("%Y-%m-%d")
     return desired_format
 
 
-def generate_md_from_api(records: list, poets_dir_path: Path) -> list[str]:
-    record_ids = []
-    for record in records:
-        fields = record["fields"]
-        poet_path = Path.joinpath(poets_dir_path, fields["Poet"])
-        poet_path.mkdir(exist_ok=True)
-        ghazal = fields["Ghazal/Nazm"]
-        ghazal = unidecode.unidecode(ghazal)  # remove accents
-        ghazal = ghazal.replace("ʾ", "")  # ghazals with . in them
-        ghazal = ghazal.replace(".", "")  # ghazals with . in them
-        ghazal_path = Path.joinpath(poet_path, ghazal)
-        logger.info(f"Generating Ghazal Markdown: {ghazal}")
-        date_read = format_date(fields["Date"])
-        with open(ghazal_path.with_suffix(".md"), "w") as file:
-            boiler_text = (
-                f"***\n"
-                f"Date Read: {date_read}\n"
-                f"***\n\n"
-                f"# {ghazal}\n\n"
-                f"### Text\n"
-            )
-            file.writelines(boiler_text)
-            generate_text_section(fields, file)
-            if fields.get("Music"):
-                generate_music_section(fields, file)
-            if fields.get("Others"):
-                generate_others(fields, file)
-        record_ids.append(record["id"])
-    return record_ids
+def format_ghazal(ghazal_to_format: str) -> str:
+    ghazal = unidecode.unidecode(ghazal_to_format)  # remove accents
+    chars_to_replace = [".", "ʾ", "`"]
+    for chars in chars_to_replace:
+        ghazal = ghazal.replace(chars, "")
+    return ghazal
 
 
-def generate_md_from_file(file_path: str, poets_dir_path: Path) -> None:
-    rows = read_file(file_path)
-    for item in rows:
-        poet_path = Path.joinpath(poets_dir_path, item["Poet"])
-        poet_path.mkdir(exist_ok=True)
-        ghazal = item["Ghazal/Nazm"]
-        ghazal = ghazal.replace(".", "")# ghazals with . in them
-        ghazal = ghazal.replace("ʾ", "")  # ghazals with . in them
-        ghazal = unidecode.unidecode(ghazal)  # remove accents
-        print(ghazal)
-        ghazal_path = Path.joinpath(poet_path, ghazal)
-        date_read = format_date(item["Date"])
-        with open(ghazal_path.with_suffix(".md"), "w") as file:
-            boiler_text = (
+def generate_md(field: dict, poets_dir_path: Path):
+    poet_path = Path.joinpath(poets_dir_path, field["Poet"])
+    poet_path.mkdir(exist_ok=True)
+    ghazal = field["Ghazal/Nazm"]
+    ghazal = format_ghazal(ghazal_to_format=ghazal)
+    ghazal_path = Path.joinpath(poet_path, ghazal)
+    logger.info(f"Generating Ghazal Markdown: {ghazal}")
+    date_read = format_date(field["Date"])
+    with open(ghazal_path.with_suffix(".md"), "w") as file:
+        boiler_text = (
                 f"---\n"
                 f"tags:\n"
                 f"  - {date_read}\n"
@@ -180,12 +153,27 @@ def generate_md_from_file(file_path: str, poets_dir_path: Path) -> None:
                 f"# {ghazal}\n\n"
                 f"### Text\n"
             )
-            file.writelines(boiler_text)
-            generate_text_section(item, file)
-            if item["Music"]:
-                generate_music_section(item, file)
-            if item["Others"]:
-                generate_others(item, file)
+        file.writelines(boiler_text)
+        generate_text_section(field, file)
+        if field.get("Music"):
+            generate_music_section(field, file)
+        if field.get("Others"):
+            generate_others(field, file)
+
+
+def generate_md_from_api(records: list, poets_dir_path: Path) -> list[str]:
+    record_ids = []
+    for record in records:
+        field = record["fields"]
+        generate_md(field=field, poets_dir_path=poets_dir_path)
+        record_ids.append(record["id"])
+    return record_ids
+
+
+def generate_md_from_file(file_path: str, poets_dir_path: Path) -> None:
+    rows = read_file(file_path)
+    for item in rows:
+        generate_md(field=item, poets_dir_path=poets_dir_path)
 
 
 if __name__ == "__main__":
