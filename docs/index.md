@@ -13,8 +13,9 @@ title: Columbia Urdu Poetry Group
 </span>
 <br>
 <br>
-<span style="font-family:lucida sans unicode; font-weight: normal; font-size:1.5em;">
+<a href="http://www.columbia.edu/itc/mealac/pritchett/00ghalib/010/10_12.html?unicode"><span style="font-family:lucida sans unicode; font-weight: normal; font-size:1.5em;">
 naz̤ar meñ hai hamārī jādah-e rāh-e fanā ġhālib
 <br>
 kih yih shīrāzah hai ʿālam ke ajzā-e pareshāñ kā
 </span>
+</a>
