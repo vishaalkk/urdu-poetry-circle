@@ -27,7 +27,7 @@ jobs:
           API_KEY: ${{secrets.AIRTABLE_API_KEY}}
         run: |
           echo "$GITHUB_WORKSPACE"
-          python script.py --poets-dir-path "${DIRECTORY_PATH}"" --api-key "${API_KEY}"
+          python script.py --poets-dir-path "${DIRECTORY_PATH}" --api-key "${API_KEY}"
 
 # run: |
 # git config user.name ${{ secrets.GH_USER }}
