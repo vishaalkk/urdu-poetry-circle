@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checking out repository
         uses: actions/checkout@v3
-      - name: Set up Python 3.7
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
@@ -26,7 +26,7 @@ jobs:
           DIRECTORY_PATH: "/docs/poets"
           API_KEY: ${{secrets.AIRTABLE_API_KEY}}
         run: |
-          python script.py --poets-dir-path "${DIRECTORY_PATH}"
+          python script.py --poets-dir-path "${DIRECTORY_PATH}" --api-key "${API_KEY}"
 
 # run: |
 # git config user.name ${{ secrets.GH_USER }}
