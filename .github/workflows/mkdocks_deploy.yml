@@ -23,10 +23,11 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Generate Files
         env:
-          DIRECTORY_PATH: "${{GITHUB_WORKSPACE}}/docs/poets"
+          DIRECTORY_PATH: format('Hello {0} {1} {2}', $GITHUB_WORKSPACE, '/docs/poets')
           API_KEY: ${{secrets.AIRTABLE_API_KEY}}
         run: |
-          python script.py --poets-dir-path "${DIRECTORY_PATH}" --api-key "${API_KEY}"
+          echo "$DIRECTORY_PATH"
+          python script.py --poets-dir-path "${DIRECTORY_PATH}"" --api-key "${API_KEY}"
 
 # run: |
 # git config user.name ${{ secrets.GH_USER }}
