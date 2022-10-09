@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Generates Markdown Files & Pushes Them
 on:
   push:
     paths:
