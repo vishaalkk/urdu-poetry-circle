@@ -185,8 +185,8 @@ if __name__ == "__main__":
     poets_dir_path = Path(args.poets_dir_path)
     if args.api_key:
         records = get_records(args.api_key)
-        records_to_update = generate_md_from_api(records, args.poets_dir_path)
+        records_to_update = generate_md_from_api(records, poets_dir_path)
         update_record(args.api_key, records_to_update)
         print(f"Updated these records {records_to_update}")
     if args.file_path:
-        generate_md_from_file(args.file_path, args.poets_dir_path)
+        generate_md_from_file(args.file_path, poets_dir_path)
