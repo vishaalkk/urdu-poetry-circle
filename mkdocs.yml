@@ -1,5 +1,6 @@
 site_name: Columbia Urdu Poetry Group
-site_url: https://example.com/
+site_url: https://columbiaurdupoetrygroup.com/
+site_author: Vishal | وشال
 theme:
   name: material
   palette:
@@ -48,3 +49,4 @@ markdown_extensions:
   - attr_list
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/details.css
