@@ -1,7 +1,7 @@
 name: Generates Markdown Files & Pushes Them
 on:
   schedule:
-    - cron: "35 2 * * 7"
+    - cron: "38 2 * * 7"
   workflow_dispatch:
 
 jobs:
