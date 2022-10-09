@@ -6,17 +6,15 @@ title: Columbia Urdu Poetry Group
 
 
 
-<span style="font-family:Papyrus; font-size:2em;">
-غنچۂ نا شگفتہ کو دور سے مت دکھا کہ یوں
+<span style="font-family:Jameel Noori Nastaleeq; font-size:2em;">
+نظر میں ہے ہماری جادۂ راہِ فنا غالب
 <br>
-بوسے کو پوچھتا ہوں میں منہ سے مجھے بتا کہ یوں
+کہ یہ شیرازہ ہے عالم کے اجزائے پریشاں کا
 </span>
-
-
-
-
-
-
-
-
-<!--[Subscribe to our mailing list](mailto:macfadra@gmail.com){ .md-button }-->
+<br>
+<br>
+<span style="font-family:lucida sans unicode; font-weight: normal; font-size:1.5em;">
+naz̤ar meñ hai hamārī jādah-e rāh-e fanā ġhālib
+<br>
+kih yih shīrāzah hai ʿālam ke ajzā-e pareshāñ kā
+</span>
