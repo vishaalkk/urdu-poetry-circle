@@ -1,18 +1,54 @@
 import csv
-import os
 from pathlib import Path
-from urllib.parse import parse_qsl, urljoin
+from typing import Any
 import unidecode
-
-directory_path = Path(
-    '/Users/vishalk/personal-repo/urdu-poetry-circle/docs/poets')
-
-file_path = '/Users/vishalk/Downloads/Catalog-Grid view.csv'
+from dateutil.parser import parse
+import requests
+import argparse
 
 
-def read_file(file_path: str):
+BASE_URL = "https://api.airtable.com/v0/appO8MBTJjB5BJNr9/Catalog"
+
+
+def get_records(api_key: str) -> Any | None:
+    headers = {"Authorization": api_key}
+    params = {
+        "maxRecords": "10",
+        "view": "Grid view",
+        "filterByFormula": "Status!='Added'",
+    }
+    response = requests.get(
+        BASE_URL,
+        params=params,
+        headers=headers,
+    )
+    if response.ok:
+        return response.json()["records"]
+
+
+def update_record(api_key: str, record_ids: list) -> int:
+    headers = {"Authorization": api_key}
+    records_to_update = []
+    for r_id in record_ids:
+        record = {
+            "id": r_id,
+            "fields": {
+                "Status": "Added",
+            },
+        }
+        records_to_update.append(record)
+    json_data = {"records": records_to_update}
+    response = requests.patch(
+        BASE_URL,
+        headers=headers,
+        json=json_data,
+    )
+    return response.status_code
+
+
+def read_file(file_path: str) -> list[dict]:
     rows = []
-    with open(file_path, mode='r', encoding='utf-8-sig') as csv_file:
+    with open(file_path, mode="r", encoding="utf-8-sig") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for line in csv_reader:
             rows.append(line)
@@ -21,64 +57,104 @@ def read_file(file_path: str):
 
 def generate_yt_embedded(link: str) -> str:
     if "youtube" in link:
+        if link.startswith("<"):  # links from API start with this
+            link = link.strip()
+            link = link[1 : len(link) - 1]
         embedded = link.replace("watch?v=", "embed/")
-        return f'''<iframe width="560" height="315" src="{embedded}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'''
+        return f"""<iframe width="560" height="315" src="{embedded}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"""
     else:
         return link
 
 
-def generate_music_section(item: dict, file):
-    file.write('### Renditions & Recitations\n\n')
-    music_links = item['Music'].split('- ')[1:]
+def generate_music_section(item: dict, file) -> None:
+    file.write("### Renditions & Recitations\n\n")
+    music_links = item["Music"].split("- ")[1:]
     for link in music_links:
         if link:
-            s = link.split(':', 1)
-            file.write(f'#### {s[0].strip()}\n\n')
-            l = generate_yt_embedded(s[1].strip())
-            file.write(f'{l}\n\n')
+            text_link = link.split(":", 1)
+            heading = text_link[0].strip()
+            file.write(f"#### {heading}\n\n")
+            yt_link = generate_yt_embedded(text_link[1].strip())
+            file.write(f"{yt_link}\n\n")
 
 
-def generate_text_section(item, file):
-    fran = f"[Desertful of Roses]({item['Fran']})\n\n"
-    rekhta = f"[Rekhta]({item['Rekhta']})\n\n"
-    if item['Fran'] and item['Rekhta']:
+def generate_text_section(item, file) -> None:
+    rekhta = f"[Rekhta]({item['Rekhta']})\n\n" if item.get("Rekhta") else None
+    fran = f"[Desertful of Roses]({item['Fran']})\n\n" if item.get("Fran") else None
+    if fran and rekhta:
         file.write(fran)
         file.write(rekhta)
-    elif item['Fran']:
+    elif fran:
         file.write(fran)
-    elif item['Rekhta']:
+    elif rekhta:
         file.write(rekhta)
     else:
-        file.write('')
+        file.write("")
 
 
-def generate_others(item: dict, file):
-    file.write('### Others\n\n')
-    other_links = item['Others'].split('- ')[1:]
+def generate_others(item: dict, file) -> None:
+    file.write("### Others\n\n")
+    other_links = item["Others"].split("- ")[1:]
     for link in other_links:
-        if link and 'youtube' in link:
-            s = link.split(':', 1)
-            file.write(f'#### {s[0].strip()}\n\n')
-            l = generate_yt_embedded(s[1].strip())
-            file.write(f'{l}\n\n')
+        if link and "youtube" in link:
+            text_link = link.split(":", 1)
+            file.write(f"#### {text_link[0].strip()}\n\n")
+            yt_link = generate_yt_embedded(text_link[1].strip())
+            file.write(f"{yt_link}\n\n")
         else:
-            s = link.split(':', 1)
-            file.write(f'#### {s[0].strip()}\n\n')
-            l = s[1].strip()
-            file.write(f'{l}\n\n')
+            text_link = link.split(":", 1)
+            heading = text_link[0].strip()
+            file.write(f"#### {heading}\n\n")
+            yt_link = text_link[1].strip()
+            file.write(f"{yt_link}\n\n")
 
 
-def generate_md(file_path: str):
-    rows = read_file(file_path)
-    for item in rows:
-        poet_path = Path.joinpath(directory_path, item['Poet'])
+def format_date(dt: str) -> str:
+    # Date from API is number
+    parse_date = parse(dt)
+    desired_format = parse_date.strftime("%B %-d, %Y")
+    return desired_format
+
+
+def generate_md_from_api(records: list, poets_dir_path: Path) -> list[str]:
+    record_ids = []
+    for record in records:
+        fields = record["fields"]
+        poet_path = Path.joinpath(poets_dir_path, fields["Poet"])
         poet_path.mkdir(exist_ok=True)
-        ghazal = item['Ghazal/Nazm']
-        ghazal = ghazal.replace('.', '')  # ghazals with . in them
+        ghazal = fields["Ghazal/Nazm"]
+        ghazal = ghazal.replace(".", "")  # ghazals with . in them
         ghazal = unidecode.unidecode(ghazal)  # remove accents
         ghazal_path = Path.joinpath(poet_path, ghazal)
-        ghazal_file = ghazal_path.with_suffix('.md')
-        with open(ghazal_path.with_suffix('.md'), 'w') as file:
+        date_read = format_date(fields["Date"])
+        with open(ghazal_path.with_suffix(".md"), "w") as file:
+            boiler_text = (
+                f"***\n"
+                f"Date Read: {date_read}\n"
+                f"***\n\n"
+                f"# {ghazal}\n\n"
+                f"### Text\n"
+            )
+            file.writelines(boiler_text)
+            generate_text_section(fields, file)
+            if fields.get("Music"):
+                generate_music_section(fields, file)
+            if fields.get("Others"):
+                generate_others(fields, file)
+        record_ids.append(record["id"])
+    return record_ids
+
+
+def generate_md_from_file(file_path: str, poets_dir_path: Path) -> None:
+    rows = read_file(file_path)
+    for item in rows:
+        poet_path = Path.joinpath(poets_dir_path, item["Poet"])
+        poet_path.mkdir(exist_ok=True)
+        ghazal = item["Ghazal/Nazm"]
+        ghazal = ghazal.replace(".", "")  # ghazals with . in them
+        ghazal = unidecode.unidecode(ghazal)  # remove accents
+        ghazal_path = Path.joinpath(poet_path, ghazal)
+        with open(ghazal_path.with_suffix(".md"), "w") as file:
             boiler_text = (
                 f"***\n"
                 f"Date Read: {item['Date']}\n"
@@ -88,10 +164,29 @@ def generate_md(file_path: str):
             )
             file.writelines(boiler_text)
             generate_text_section(item, file)
-            if item['Music']:
+            if item["Music"]:
                 generate_music_section(item, file)
-            if item['Others']:
+            if item["Others"]:
                 generate_others(item, file)
 
 
-generate_md(file_path)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="File Path, or API Key")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--file-path", type=str, help="Path to csv catalog")
+    group.add_argument("--api-key", type=str, help="Airtable's API Key")
+    parser.add_argument(
+        "--poets-dir-path",
+        type=str,
+        help="Path to Poet's directory where markdown files will be generated",
+        required=True,
+    )
+    args = parser.parse_args()
+    poets_dir_path = Path(args.poets_dir_path)
+    if args.api_key:
+        records = get_records(args.api_key)
+        records_to_update = generate_md_from_api(records, args.poets_dir_path)
+        update_record(args.api_key, records_to_update)
+        print(f"Updated these records {records_to_update}")
+    if args.file_path:
+        generate_md_from_file(args.file_path, args.poets_dir_path)
