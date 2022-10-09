@@ -5,9 +5,13 @@ import unidecode
 from dateutil.parser import parse
 import requests
 import argparse
-
+import logging
+import sys
 
 BASE_URL = "https://api.airtable.com/v0/appO8MBTJjB5BJNr9/Catalog"
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def get_records(api_key: str) -> Any | None:
@@ -17,13 +21,16 @@ def get_records(api_key: str) -> Any | None:
         "view": "Grid view",
         "filterByFormula": "Status!='Added'",
     }
+    logger.info("Fetching records from Airtable")
     response = requests.get(
         BASE_URL,
         params=params,
         headers=headers,
     )
     if response.ok:
-        return response.json()["records"]
+        data = response.json()["records"]
+        logger.info(f"Fetched: {len(data)}")
+        return data
 
 
 def update_record(api_key: str, record_ids: list) -> int:
@@ -38,6 +45,7 @@ def update_record(api_key: str, record_ids: list) -> int:
         }
         records_to_update.append(record)
     json_data = {"records": records_to_update}
+    logger.info(f"Updating Records: {records_to_update}")
     response = requests.patch(
         BASE_URL,
         headers=headers,
@@ -56,6 +64,7 @@ def read_file(file_path: str) -> list[dict]:
 
 
 def generate_yt_embedded(link: str) -> str:
+    logger.info("Generating Youtube link")
     if "youtube" in link:
         if link.startswith("<"):  # links from API start with this
             link = link.strip()
@@ -67,6 +76,7 @@ def generate_yt_embedded(link: str) -> str:
 
 
 def generate_music_section(item: dict, file) -> None:
+    logger.info("Generating Music Section")
     file.write("### Renditions & Recitations\n\n")
     music_links = item["Music"].split("- ")[1:]
     for link in music_links:
@@ -79,6 +89,7 @@ def generate_music_section(item: dict, file) -> None:
 
 
 def generate_text_section(item, file) -> None:
+    logger.info("Generating Text Section")
     rekhta = f"[Rekhta]({item['Rekhta']})\n\n" if item.get("Rekhta") else None
     fran = f"[Desertful of Roses]({item['Fran']})\n\n" if item.get("Fran") else None
     if fran and rekhta:
@@ -93,6 +104,7 @@ def generate_text_section(item, file) -> None:
 
 
 def generate_others(item: dict, file) -> None:
+    logger.info("Generating Others Section")
     file.write("### Others\n\n")
     other_links = item["Others"].split("- ")[1:]
     for link in other_links:
@@ -126,6 +138,7 @@ def generate_md_from_api(records: list, poets_dir_path: Path) -> list[str]:
         ghazal = ghazal.replace(".", "")  # ghazals with . in them
         ghazal = unidecode.unidecode(ghazal)  # remove accents
         ghazal_path = Path.joinpath(poet_path, ghazal)
+        logger.info(f"Generating Ghazal Markdown: {ghazal}")
         date_read = format_date(fields["Date"])
         with open(ghazal_path.with_suffix(".md"), "w") as file:
             boiler_text = (
@@ -187,6 +200,5 @@ if __name__ == "__main__":
         records = get_records(args.api_key)
         records_to_update = generate_md_from_api(records, poets_dir_path)
         update_record(args.api_key, records_to_update)
-        print(f"Updated these records {records_to_update}")
     if args.file_path:
         generate_md_from_file(args.file_path, poets_dir_path)
