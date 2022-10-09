@@ -2,7 +2,7 @@
 title: Columbia Urdu Poetry Group
 ---
 
-# Welcome to Columbia Urdu Poetry Group :octicons-heart-fill-24:{ .heart }
+# Welcome to the Columbia Urdu Poetry Group :octicons-heart-fill-24:{ .heart }
 
 
 
