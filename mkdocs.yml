@@ -3,6 +3,8 @@ site_url: https://columbiaurdupoetrygroup.com/
 site_author: Vishal | وشال
 theme:
   name: material
+  logo: images/icons8-poem-stickers-96.png
+  favicon: images/icons8-poem-stickers-32.png
   palette:
     - scheme: default
       primary: teal
