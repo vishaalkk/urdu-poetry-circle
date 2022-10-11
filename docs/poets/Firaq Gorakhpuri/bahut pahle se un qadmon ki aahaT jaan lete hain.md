@@ -7,6 +7,8 @@ tags:
 ### Text
 [Rekhta](https://www.rekhta.org/ghazals/bahut-pahle-se-un-qadmon-kii-aahat-jaan-lete-hain-firaq-gorakhpuri-ghazals?lang=ur)
 
+<iframe src="https://www.rekhta.org/ghazals/bahut-pahle-se-un-qadmon-kii-aahat-jaan-lete-hain-firaq-gorakhpuri-ghazals?lang=ur" style="width:100%; height: 50vw">
+
 ### Renditions & Recitations
 
 #### Chitra and Jagjit Singh

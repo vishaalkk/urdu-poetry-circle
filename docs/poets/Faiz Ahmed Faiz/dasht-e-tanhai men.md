@@ -6,8 +6,16 @@ tags:
 
 ### Text
 [Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00urdu/3mod/faiz_yad.pdf)
+<iframe src="http://www.columbia.edu/itc/mealac/pritchett/00urdu/3mod/faiz_yad.pdf" style="width:100%; height: 50vw">
+</iframe>
 
 [Rekhta](https://www.rekhta.org/nazms/yaad-dasht-e-tanhaaii-men-ai-jaan-e-jahaan-larzaan-hain-faiz-ahmad-faiz-nazms?lang=ur)
+
+<details>
+<summary>Rekhta</summary>
+<iframe src="https://www.rekhta.org/nazms/yaad-dasht-e-tanhaaii-men-ai-jaan-e-jahaan-larzaan-hain-faiz-ahmad-faiz-nazms?lang=ur" style="width:100%; height: 50vw">
+</iframe>
+</details>
 
 ### Renditions & Recitations
 
