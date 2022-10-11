@@ -8,6 +8,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: [Generates Markdown Files & Pushes Them]
+    types: 
+      - completed
 
 jobs:
   build:
