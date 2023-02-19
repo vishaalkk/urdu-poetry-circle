@@ -1,6 +1,6 @@
 ---
 tags:
-  - 2021-01-22
+  - 2022-12-23
 ---
 # milti hai khu-e yar se nar iltihab men
 
