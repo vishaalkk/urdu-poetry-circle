@@ -1,6 +1,6 @@
 ---
 tags:
-  - 2023-02-17
+  - 2023-02-24
 ---
 # dil ke ma'mure ki mat kar fikr fursat chahiye
 
