@@ -13,7 +13,7 @@ tags:
 
 ### Others
 
-#### https
+#### Text
 
-//docs.google.com/document/d/1fKE0ILZW3jWxBXWJnDC9wRca52tNgLn2hpkKgeasm2s/edit
+https://docs.google.com/document/d/1fKE0ILZW3jWxBXWJnDC9wRca52tNgLn2hpkKgeasm2s/edit
 
