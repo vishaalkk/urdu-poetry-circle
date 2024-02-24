@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_records(api_key: str) -> Any | None:
-    headers = {"Authorization": api_key}
+    headers = {"Authorization": f"Bearer {api_key}"}
     params = {
         "maxRecords": "10",
         "view": "Grid view",
