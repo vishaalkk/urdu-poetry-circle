@@ -35,7 +35,7 @@ def get_records(api_key: str) -> Any | None:
 
 
 def update_record(api_key: str, record_ids: list) -> int:
-    headers = {"Authorization": api_key}
+    headers = {"Authorization": f"Bearer {api_key}"}
     records_to_update = []
     for r_id in record_ids:
         record = {
