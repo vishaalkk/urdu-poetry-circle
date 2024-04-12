@@ -15,17 +15,17 @@ tags:
 
 #### Sayema Rahman
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/3Hv9gsnD2g4&ab\_channel=FiazStudios](https://www.youtube.com/embed/3Hv9gsnD2g4)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3Hv9gsnD2g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Shilpa Rao
 
-<iframe width="560" height="315" src="[ https://www.youtube.com/embed/-CRpKQIvXsE&ab\_channel=Jashn-e-Rekhta](https://www.youtube.com/embed/-CRpKQIvXsE)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="[ https://www.youtube.com/embed/-CRpKQIvXsE](https://www.youtube.com/embed/-CRpKQIvXsE)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Osman Mir
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/DPoW67ZGUjs&ab\_channel=OsmanMir](https://www.youtube.com/embed/DPoW67ZGUjs)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DPoW67ZGUjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Hariharan
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/Yr-OBnNhRMI&ab\_channel=Hariharan-Topic](https://www.youtube.com/embed/Yr-OBnNhRMI)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yr-OBnNhRMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
