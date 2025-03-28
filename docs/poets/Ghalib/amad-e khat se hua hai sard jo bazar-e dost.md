@@ -1,9 +1,9 @@
 ---
 tags:
-  - 2020-05-10
+  - 2025-02-21
 ---
 # amad-e khat se hua hai sard jo bazar-e dost
 
 ### Text
-[Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/053/index_053.html)
+[Desertful of Roses](https://franpritchett.com/00ghalib/053/index_053.html)
 
