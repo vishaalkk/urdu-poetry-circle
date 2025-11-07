@@ -1,9 +1,9 @@
 ---
 tags:
-  - 2020-07-17
+  - 2025-05-02
 ---
 # larazta hai mira dil zahmat-e mihr-e darakhshan par
 
 ### Text
-[Desertful of Roses](http://www.columbia.edu/itc/mealac/pritchett/00ghalib/061/index_061.html)
+[Desertful of Roses](https://franpritchett.com/00ghalib/061/index_061.html)
 
