@@ -16,13 +16,30 @@ def fetch_airtable_data():
     if not AIRTABLE_API_KEY:
         return None
 
-    url = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"
-    headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
+    all_records = []
+    offset = None
     
-    response = requests.get(url, headers=headers)
-    if response.ok:
-        return response.json()["records"]
-    return None
+    while True:
+        url = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"
+        params = {}
+        if offset:
+            params["offset"] = offset
+            
+        headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
+        
+        response = requests.get(url, headers=headers, params=params)
+        if not response.ok:
+            print(f"Error fetching Airtable data: {response.status_code}")
+            break
+            
+        data = response.json()
+        all_records.extend(data.get("records", []))
+        
+        offset = data.get("offset")
+        if not offset:
+            break
+            
+    return all_records if all_records else None
 
 def read_catalog_csv():
     csv_path = Path("catalog.csv")
