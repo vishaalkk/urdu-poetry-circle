@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import poemsData from '../../content/poems.json';
+import poemsData from '../../content/archive/poems.json';
 
 export function getStaticPaths() {
   return poemsData.map(p => ({
@@ -13,7 +13,7 @@ const { poem } = Astro.props;
 
 // Aggregate all performances from all readings
 const allPerformances = poem.readings.flatMap(r => {
-  if (!r.music) return [];
+  if (!r.music || typeof r.music !== 'string') return [];
   // Use a more flexible regex to split by common bullet patterns or newlines
   return r.music.split(/\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
     const parts = m.split(': ');
@@ -29,7 +29,7 @@ const uniquePerformances = Array.from(new Map(allPerformances.map(p => [p.url, p
 
 // Aggregate all PDFs
 const allPDFs = poem.readings.flatMap(r => {
-  if (!r.pdfs) return [];
+  if (!r.pdfs || typeof r.pdfs !== 'string') return [];
   // Parse Airtable format: "filename (url)"
   const matches = r.pdfs.match(/\((https?:\/\/[^\)]+)\)/g);
   if (!matches) return [];

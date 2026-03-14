@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import poemsData from '../../content/poems.json';
+import poemsData from '../../content/archive/poems.json';
 
 export function getStaticPaths() {
   const poets = [...new Set(poemsData.map(p => p.poet))].filter(Boolean);

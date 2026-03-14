@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PoetCard from '../../components/PoetCard.astro';
-import poemsData from '../../content/poems.json';
+import poemsData from '../../content/archive/poems.json';
 
 const allPoets = [...new Set(poemsData.map(p => p.poet))].filter(Boolean).sort();
 

@@ -115,7 +115,8 @@ def main():
 
     processed_data = process_data(raw_data)
     
-    output_dir = Path("src/content")
+    # Process and save to src/content/archive
+    output_dir = Path("src/content/archive")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     with open(output_dir / "poems.json", "w", encoding="utf-8") as f:
