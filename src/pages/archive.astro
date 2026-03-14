@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import poemsData from '../content/poems.json';
+
+// Flatten the grouped data back into individual readings for the archive
+const allReadings = poemsData.flatMap(poem => 
+  poem.readings.map(reading => ({
+    title: poem.title,
+    poet: poem.poet,
+    date: reading.date,
+    slug: poem.slug
+  }))
+);
+---
+
+<Layout title="Archive | Columbia Urdu Poetry Group">
+	<h1 class="text-6xl text-center mb-12 italic">The Archive</h1>
+	<p class="text-center text-journal-faded max-w-lg mx-auto mb-24 italic">
+		A chronological record of our weekly readings and discussions.
+	</p>
+
+	<section class="max-w-3xl mx-auto">
+		<div class="space-y-1">
+			{allReadings.sort((a, b) => new Date(b.date) - new Date(a.date)).map(r => (
+				<div class="group border-b border-black/[0.03] hover:bg-black/[0.01] transition-colors">
+					<a href={`/poems/${r.slug}`} class="flex items-center py-6 px-4 no-underline">
+						<span class="w-24 md:w-32 flex-shrink-0 font-sans text-[9px] uppercase tracking-widest text-journal-faded">
+							{r.date ? new Date(r.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '---'}
+						</span>
+						<div class="flex-grow">
+							<h3 class="text-xl md:text-2xl font-serif text-journal-text group-hover:text-journal-accent transition-colors">{r.title}</h3>
+							<p class="text-[10px] uppercase tracking-widest text-journal-faded mt-1">{r.poet}</p>
+						</div>
+						<span class="font-serif italic text-sm text-journal-faded opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
+							View history &rarr;
+						</span>
+					</a>
+				</div>
+			))}
+		</div>
+	</section>
+</Layout>

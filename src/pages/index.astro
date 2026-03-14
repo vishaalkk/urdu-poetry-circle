@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Columbia Urdu Poetry Group">
+	<section class="py-24 text-center">
+		<div class="font-urdu text-6xl md:text-8xl leading-loose mb-8 text-journal-text transition-all hover:scale-[1.02] cursor-default select-none">
+			نظر میں ہے ہماری جادۂ راہِ فنا غالب
+		</div>
+		<div class="italic text-xl text-journal-faded font-serif max-w-2xl mx-auto border-t border-black/5 pt-12">
+			"In my sight is the path of the road of extinction, Ghalib"
+		</div>
+	</section>
+
+	<section class="mt-24 text-center max-w-xl mx-auto border-b border-black/5 pb-24">
+		<p class="text-lg leading-relaxed mb-12">
+			A weekly gathering at Columbia University dedicated to the study and appreciation of Urdu verse. Since 2020, we have archived our readings of classical and contemporary masters.
+		</p>
+		<a href="/poets" class="font-sans text-xs uppercase tracking-[0.3em] text-journal-text border-b border-journal-text pb-2 hover:text-journal-accent hover:border-journal-accent transition-all">
+			Explore the Catalog
+		</a>
+	</section>
+
+	<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-16">
+		<a href="/poets/Ghalib" class="group text-center">
+			<div class="aspect-square bg-neutral-200 mb-6 overflow-hidden">
+				<img src="/images/ghalib.jpg" alt="Mirza Ghalib" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+			</div>
+			<div class="font-bold text-lg mb-1 group-hover:text-journal-accent">Mirza Ghalib</div>
+			<div class="text-[10px] uppercase tracking-widest text-journal-faded">The Classical Master</div>
+		</a>
+		<a href="/poets/Faiz Ahmed Faiz" class="group text-center">
+			<div class="aspect-square bg-neutral-200 mb-6 overflow-hidden">
+				<img src="/images/faiz.jpg" alt="Faiz Ahmed Faiz" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+			</div>
+			<div class="font-bold text-lg mb-1 group-hover:text-journal-accent">Faiz Ahmed Faiz</div>
+			<div class="text-[10px] uppercase tracking-widest text-journal-faded">The Revolutionary Voice</div>
+		</a>
+		<a href="/poets/Jaun Elia" class="group text-center">
+			<div class="aspect-square bg-neutral-100 mb-6 flex items-center justify-center font-serif text-3xl group-hover:bg-journal-accent/5 transition-colors">
+				JE
+			</div>
+			<div class="font-bold text-lg mb-1 group-hover:text-journal-accent">Jaun Elia</div>
+			<div class="text-[10px] uppercase tracking-widest text-journal-faded">The Non-Conformist</div>
+		</a>
+	</section>
+</Layout>

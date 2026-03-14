@@ -1,0 +1,58 @@
+site_name: Columbia Urdu Poetry Group
+site_url: https://columbiaurdupoetrygroup.com/
+site_author: Vishal | وشال
+theme:
+  name: material
+  custom_dir: overrides
+  logo: images/icons8-poem-stickers-96.png
+  favicon: images/icons8-poem-stickers-32.png
+  palette:
+    - scheme: default
+      primary: white
+      accent: black
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - navigation.top
+    - navigation.footer
+    - content.action.view
+    - content.action.edit
+
+extra:
+  hide:
+    - navigation
+    - toc
+plugins:
+  - search
+  - awesome-pages
+  - tags:
+      tags_file: tags.md
+markdown_extensions:
+  - meta
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - smarty
+  - tables
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.betterem
+  - pymdownx.magiclink
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed
+  - attr_list
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/details.css
+extra:
+  analytics:
+    provider: google
+    property: G-EVBZCNM2SN
