@@ -1,14 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PoetCard from '../../components/PoetCard.astro';
 import poemsData from '../../content/poems.json';
 
-// Get all unique poets from the actual data
 const allPoets = [...new Set(poemsData.map(p => p.poet))].filter(Boolean).sort();
 
 const featuredPoets = [
-	{ name: "Ghalib", img: "/images/ghalib.jpg", desc: "The preeminent classical poet." },
-	{ name: "Faiz Ahmed Faiz", img: "/images/faiz.jpg", desc: "The voice of modern Urdu literature." },
-	{ name: "Jaun Elia", desc: "A master of contemporary angst." },
+	"Mirza Ghalib",
+	"Mir Taqi Mir",
+	"Faiz Ahmed Faiz"
 ];
 ---
 
@@ -19,20 +19,8 @@ const featuredPoets = [
 	</p>
 
 	<section class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-32">
-		{featuredPoets.map(p => (
-			<a href={`/poets/${p.name}`} class="group text-center">
-				<div class="aspect-square bg-neutral-100 mb-6 overflow-hidden">
-					{p.img ? (
-						<img src={p.img} alt={p.name} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
-					) : (
-						<div class="w-full h-full flex items-center justify-center text-3xl font-serif uppercase tracking-widest text-neutral-300">
-							{p.name.charAt(0)}
-						</div>
-					)}
-				</div>
-				<h3 class="font-bold text-xl group-hover:text-journal-accent transition-colors">{p.name}</h3>
-				<p class="text-[10px] uppercase tracking-widest text-journal-faded mt-2">{p.desc || "Archive Collection"}</p>
-			</a>
+		{featuredPoets.map(name => (
+			<PoetCard name={name} href={`/v2/poets/${name === "Mirza Ghalib" ? "Ghalib" : name}`} />
 		))}
 	</section>
 
@@ -40,7 +28,7 @@ const featuredPoets = [
 		<h2 class="font-sans text-xs uppercase tracking-[0.3em] text-center mb-16 text-journal-faded">Complete Catalog ({allPoets.length} Poets)</h2>
 		<div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-4xl mx-auto">
 			{allPoets.map(p => (
-				<a href={`/poets/${p}`} class="text-sm font-serif hover:text-journal-accent transition-colors py-1 border-b border-transparent hover:border-journal-accent/20">
+				<a href={`/v2/poets/${p}`} class="text-sm font-serif hover:text-journal-accent transition-colors py-1 border-b border-transparent hover:border-journal-accent/20">
 					{p}
 				</a>
 			))}

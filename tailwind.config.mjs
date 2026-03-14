@@ -19,7 +19,7 @@ export default {
 			fontFamily: {
 				serif: ['"Libre Baskerville"', 'serif'],
 				sans: ['Inter', 'sans-serif'],
-				urdu: ['"Jameel Noori Nastaleeq"', '"Noto Nastaliq Urdu"', 'serif'],
+				urdu: ['"Noto Nastaliq Urdu"', '"Jameel Noori Nastaleeq"', 'serif'],
 			},
 		},
 	},

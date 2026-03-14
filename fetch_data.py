@@ -91,10 +91,13 @@ def process_data(raw_records):
 
     # Convert back to list and sort readings by date
     result = []
+    import re
     for item in grouped.values():
         item["readings"].sort(key=lambda x: x["date"] or "0000", reverse=True)
-        # Create a unique slug
-        item["slug"] = f"{item['poet']}-{item['title']}".lower().replace(" ", "-").replace("/", "-").replace("?", "")
+        # Create a unique slug using robust regex
+        raw_slug = f"{item['poet']}-{item['title']}".lower()
+        # Replace non-alphanumeric (allowing Urdu range) with hyphens
+        item["slug"] = re.sub(r'[^a-z0-9\u0600-\u06FF]+', '-', raw_slug).strip('-')
         result.append(item)
         
     return result

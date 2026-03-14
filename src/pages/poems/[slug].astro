@@ -14,7 +14,8 @@ const { poem } = Astro.props;
 // Aggregate all performances from all readings
 const allPerformances = poem.readings.flatMap(r => {
   if (!r.music) return [];
-  return r.music.split('- ').filter(Boolean).map(m => {
+  // Use a more flexible regex to split by common bullet patterns or newlines
+  return r.music.split(/\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
     const parts = m.split(': ');
     const name = parts[0];
     const url = parts[1] || "";
@@ -51,7 +52,9 @@ const uniquePDFs = [...new Set(allPDFs)];
 			<div class="flex flex-wrap justify-center gap-4">
 				{poem.readings.map(r => (
 					<div class="px-6 py-2 bg-journal-tan text-journal-green border border-journal-green/10 rounded-full font-serif italic text-sm font-bold shadow-sm transition-transform hover:scale-105">
-						{new Date(r.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+						{r.date && !isNaN(new Date(r.date).getTime()) 
+              ? new Date(r.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+              : r.date || 'Date TBD'}
 					</div>
 				))}
 			</div>

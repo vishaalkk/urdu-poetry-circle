@@ -1,0 +1,33 @@
+---
+interface Props {
+  name: string;
+  href: string;
+}
+
+const { name, href } = Astro.props;
+
+// Convert name to image filename format
+// e.g., "Mir Taqi Mir" -> "mir_taqi_mir.jpg"
+let imgFilename = name.toLowerCase().replace(/ /g, '_') + '.jpg';
+
+// Special cases for existing images
+if (name === "Mirza Ghalib") imgFilename = "ghalib.jpg";
+if (name === "Faiz Ahmed Faiz") imgFilename = "faiz.jpg";
+
+const imgSrc = `/v2/images/${imgFilename}`;
+---
+
+<a href={href} class="group text-center block no-underline">
+  <div class="aspect-square bg-neutral-100 mb-6 overflow-hidden relative border border-black/5">
+    <img 
+      src={imgSrc} 
+      alt={name} 
+      class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    />
+    <div class="fallback-initial absolute inset-0 hidden items-center justify-center text-4xl font-serif text-journal-faded bg-journal-silk group-hover:bg-journal-accent/5 transition-colors">
+      {name.charAt(0)}
+    </div>
+  </div>
+  <div class="font-bold text-lg group-hover:text-journal-accent transition-colors">{name}</div>
+</a>

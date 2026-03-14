@@ -33,7 +33,7 @@ const poetPoems = poemsData.filter(p => p.poet === poet);
 			{poetPoems.map(p => (
 				<div class="poem-item group border-b border-black/[0.03] hover:bg-black/[0.01] transition-colors">
 					<a 
-						href={`/poems/${p.slug}`} 
+						href={`/v2/poems/${p.slug}`} 
 						class="flex items-center py-6 px-4 no-underline"
 					>
 						<span class="w-24 md:w-32 flex-shrink-0 font-sans text-[9px] uppercase tracking-widest text-journal-faded opacity-60 group-hover:opacity-100 transition-opacity">
