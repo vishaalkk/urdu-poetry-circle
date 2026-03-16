@@ -8,7 +8,13 @@ export function getStaticPaths() {
 }
 
 const { poet } = Astro.params;
-const poetPoems = poemsData.filter(p => p.poet === poet);
+const poetPoems = poemsData
+  .filter(p => p.poet === poet)
+  .sort((a, b) => {
+    const dateA = a.readings[0]?.date ? new Date(a.readings[0].date).getTime() : 0;
+    const dateB = b.readings[0]?.date ? new Date(b.readings[0].date).getTime() : 0;
+    return dateB - dateA;
+  });
 ---
 
 <Layout title={`${poet} | Columbia Urdu Poetry Group`}>
