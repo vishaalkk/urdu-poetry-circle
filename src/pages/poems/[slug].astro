@@ -11,6 +11,20 @@ export function getStaticPaths() {
 
 const { poem } = Astro.props;
 
+// Helper to extract YouTube ID and create embed URL
+const getEmbedUrl = (url) => {
+  if (!url) return "";
+  let id = "";
+  if (url.includes('v=')) {
+    id = url.split('v=')[1].split('&')[0];
+  } else if (url.includes('youtu.be/')) {
+    id = url.split('youtu.be/')[1].split('?')[0];
+  } else if (url.includes('embed/')) {
+    id = url.split('embed/')[1].split('?')[0];
+  }
+  return id ? `https://www.youtube.com/embed/${id}` : url;
+};
+
 // Aggregate all performances from all readings
 const allPerformances = poem.readings.flatMap(r => {
   if (!r.music || typeof r.music !== 'string') return [];
@@ -18,9 +32,9 @@ const allPerformances = poem.readings.flatMap(r => {
   return r.music.split(/\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
     const parts = m.split(': ');
     const name = parts[0];
-    const url = parts[1] || "";
-    const embedUrl = url.includes('watch?v=') ? url.replace('watch?v=', 'embed/').split('&')[0] : url;
-    return { name, url: embedUrl, date: r.date };
+    const rawUrl = parts[1] || "";
+    const embedUrl = getEmbedUrl(rawUrl);
+    return { name, url: embedUrl, rawUrl, date: r.date };
   });
 });
 
@@ -139,7 +153,7 @@ const rekhtaLabel = isUrdushahkar ? "Urdu Shahkar" : "Rekhta";
 									{p.name}
 								</div>
 								<a 
-									href={p.url.replace('embed/', 'watch?v=')} 
+									href={p.rawUrl || p.url.replace('embed/', 'watch?v=')} 
 									target="_blank" 
 									class="inline-block font-serif italic text-xs text-journal-faded hover:text-journal-accent border-b border-black/5 hover:border-journal-accent/30 transition-all"
 								>
