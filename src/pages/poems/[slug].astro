@@ -30,12 +30,15 @@ const allPerformances = poem.readings.flatMap(r => {
   if (!r.music || typeof r.music !== 'string') return [];
   // Use a more flexible regex to split by common bullet patterns or newlines
   return r.music.split(/\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
-    const parts = m.split(': ');
-    const name = parts[0];
-    const rawUrl = parts[1] || "";
+    // Regex to match "Artist Name: URL" where URL might be in <brackets> or have extra whitespace
+    const match = m.match(/^(.+?):\s*<?(https?:\/\/[^> \s\n]+)>?/i);
+    if (!match) return null;
+
+    const name = match[1].trim();
+    const rawUrl = match[2].trim();
     const embedUrl = getEmbedUrl(rawUrl);
     return { name, url: embedUrl, rawUrl, date: r.date };
-  });
+  }).filter(Boolean);
 });
 
 // Remove duplicates based on URL
