@@ -29,8 +29,9 @@ const getEmbedUrl = (url) => {
 const allPerformances = poem.readings.flatMap(r => {
   if (!r.music || typeof r.music !== 'string') return [];
   // Use a more flexible regex to split by common bullet patterns or newlines
-  return r.music.split(/\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
+  return r.music.split(/\r?\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
     // Regex to match "Artist Name: URL" where URL might be in <brackets> or have extra whitespace
+    // Updated to handle cases where there is no space after the colon
     const match = m.match(/^(.+?):\s*<?(https?:\/\/[^> \s\n]+)>?/i);
     if (!match) return null;
 

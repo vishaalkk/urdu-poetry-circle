@@ -142,7 +142,13 @@ def update_airtable_status(record_ids):
         except Exception as e:
             print(f"Failed to update Airtable: {e}")
 
+import argparse
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--full-refresh", action="store_true", help="Process all records regardless of status")
+    args = parser.parse_args()
+
     raw_data = fetch_airtable_data()
     source = "Airtable"
     
@@ -165,9 +171,14 @@ def main():
                 if r["id"] in to_update:
                     r["fields"]["Status"] = "Added"
 
-    # Only process records marked as 'Added'
-    added_records = [r for r in raw_data if r["fields"].get("Status") == "Added"]
-    processed_data = process_data(added_records)
+    # Determine which records to process
+    if args.full_refresh:
+        print("Performing full refresh: processing all records.")
+        records_to_process = raw_data
+    else:
+        records_to_process = [r for r in raw_data if r["fields"].get("Status") == "Added"]
+    
+    processed_data = process_data(records_to_process)
     
     # Process and save to src/content/archive
     output_dir = Path("src/content/archive")

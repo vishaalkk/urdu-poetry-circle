@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      full_refresh:
+        description: 'Process all records from Airtable (ignoring status)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write # Needed to push to gh-pages branch
@@ -34,7 +39,12 @@ jobs:
           npm install
 
       - name: Fetch Data from Airtable
-        run: uv run fetch_data.py
+        run: |
+          if [[ "${{ github.event.inputs.full_refresh }}" == "true" ]]; then
+            uv run fetch_data.py --full-refresh
+          else
+            uv run fetch_data.py
+          fi
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
 
