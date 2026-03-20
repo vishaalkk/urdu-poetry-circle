@@ -28,17 +28,33 @@ const getEmbedUrl = (url) => {
 // Aggregate all performances from all readings
 const allPerformances = poem.readings.flatMap(r => {
   if (!r.music || typeof r.music !== 'string') return [];
-  // Use a more flexible regex to split by common bullet patterns or newlines
-  return r.music.split(/\r?\n|(?=- )/).map(s => s.replace(/^- /, '').trim()).filter(Boolean).map(m => {
-    // Regex to match "Artist Name: URL" where URL might be in <brackets> or have extra whitespace
-    // Updated to handle cases where there is no space after the colon
-    const match = m.match(/^(.+?):\s*<?(https?:\/\/[^> \s\n]+)>?/i);
-    if (!match) return null;
-
-    const name = match[1].trim();
-    const rawUrl = match[2].trim();
-    const embedUrl = getEmbedUrl(rawUrl);
-    return { name, url: embedUrl, rawUrl, date: r.date };
+  
+  // 1. Clean up the string: replace newlines that aren't followed by a bullet with a space
+  // This handles the "Name: \n URL" case
+  const cleanedMusic = r.music.replace(/\r?\n(?![ \t]*-)/g, ' ');
+  
+  // 2. Split by bullets
+  return cleanedMusic.split(/[•\-\*]/).map(s => s.trim()).filter(Boolean).map(m => {
+    // Regex to match "Artist Name: URL" or "Artist Name URL"
+    // Handles colons with/without spaces, and even no colon at all
+    const match = m.match(/^(.+?)(?::\s*|\s+)(<?https?:\/\/[^> \s\n]+>?)/i);
+    
+    if (match) {
+      const name = match[1].trim().replace(/^['"]+|['"]+$/g, '');
+      const rawUrl = match[2].trim().replace(/[<>]/g, '');
+      const embedUrl = getEmbedUrl(rawUrl);
+      return { name, url: embedUrl, rawUrl, date: r.date };
+    }
+    
+    // Fallback: If no name found but there is a URL, just use the URL as name
+    const urlMatch = m.match(/(https?:\/\/[^> \s\n]+)/i);
+    if (urlMatch) {
+      const rawUrl = urlMatch[1].trim();
+      const embedUrl = getEmbedUrl(rawUrl);
+      return { name: "Performance", url: embedUrl, rawUrl, date: r.date };
+    }
+    
+    return null;
   }).filter(Boolean);
 });
 
