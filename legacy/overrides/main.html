@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="site-title">
+      <a href="{{ base_url }}">{{ config.site_name }}</a>
+    </div>
+    <nav class="site-nav">
+      <a href="{{ base_url }}poets/">Poets</a>
+      <a href="{{ base_url }}tags/">Archive</a>
+      <a href="{{ base_url }}about/">About</a>
+    </nav>
+  </div>
+</header>
+{% endblock %}
+
+{% block sidebars %}
+  {# Kill all sidebars for the clean journal look #}
+{% endblock %}
+
+{% block footer %}
+<footer class="journal-footer">
+  <div class="footer-inner">
+    <p>&copy; 2026 {{ config.site_author }}. Established 2020.</p>
+    <div class="footer-links">
+      <a href="https://github.com/vchrombie/urdu-poetry-circle">GitHub</a>
+    </div>
+  </div>
+</footer>
+{% endblock %}

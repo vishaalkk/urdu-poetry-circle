@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PoetCard from '../../components/PoetCard.astro';
+import poemsData from '../../content/archive/poems.json';
+
+const allPoets = [...new Set(poemsData.map(p => p.poet))].filter(Boolean).sort();
+
+const featuredPoets = [
+	"Mirza Ghalib",
+	"Mir Taqi Mir",
+	"Faiz Ahmed Faiz"
+];
+---
+
+<Layout title="Poets | Columbia Urdu Poetry Group">
+	<h1 class="text-6xl text-center mb-24 italic">The Poets</h1>
+
+	<section class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-32">
+		{featuredPoets.map(name => (
+			<PoetCard name={name} href={`/poets/${name === "Mirza Ghalib" ? "Ghalib" : name}`} />
+		))}
+	</section>
+
+	<section class="border-t border-black/5 pt-24">
+		<h2 class="font-sans text-xs uppercase tracking-[0.3em] text-center mb-16 text-journal-faded">Complete Catalog ({allPoets.length} Poets)</h2>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-4xl mx-auto">
+			{allPoets.map(p => (
+				<a href={`/poets/${p}`} class="text-sm font-serif hover:text-journal-accent transition-colors py-1 border-b border-transparent hover:border-journal-accent/20">
+					{p}
+				</a>
+			))}
+		</div>
+	</section>
+</Layout>

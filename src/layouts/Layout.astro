@@ -1,0 +1,55 @@
+---
+import Search from '../components/Search.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Columbia Urdu Poetry Group" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-journal-bg text-journal-text antialiased min-h-screen flex flex-col font-serif">
+		<header class="py-16 text-center border-b border-black/5 mb-16">
+			<div class="site-title uppercase tracking-[0.2em] font-bold text-lg mb-6">
+				<a href="/" class="hover:text-journal-accent transition-colors">Columbia Urdu Poetry Group</a>
+			</div>
+			<nav class="flex justify-center gap-8 font-sans text-xs uppercase tracking-widest text-journal-faded">
+				<a href="/poets" class="hover:text-journal-text transition-colors">Poets</a>
+				<a href="/archive" class="hover:text-journal-text transition-colors">Archive</a>
+				<a href="/about" class="hover:text-journal-text transition-colors">About</a>
+				<Search />
+			</nav>
+		</header>
+
+		<main class="max-w-4xl mx-auto px-6 flex-grow w-full">
+			<slot />
+		</main>
+
+		<footer class="mt-32 py-16 border-t border-black/5 text-center font-sans text-[10px] uppercase tracking-[0.2em] text-journal-faded">
+			<div class="mb-4">&copy; 2026 Columbia Urdu Poetry Group. Established 2020.</div>
+			<div class="flex justify-center gap-8 text-journal-text">
+				<a href="https://github.com/vchrombie/urdu-poetry-circle" class="hover:text-journal-accent">GitHub</a>
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	@font-face {
+		font-family: 'Jameel Noori Nastaleeq';
+		src: url('https://cdn.jsdelivr.net/gh/fawad-ansari/nastaleeq-fonts@main/Jameel%20Noori%20Nastaleeq.ttf') format('truetype');
+		font-display: swap;
+	}
+</style>

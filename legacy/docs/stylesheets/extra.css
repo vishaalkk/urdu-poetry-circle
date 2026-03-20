@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  /* High-Contrast Editorial Palette */
+  --journal-bg: #F9F7F2;
+  --journal-text: #080808;
+  --journal-accent: #9B1B30; /* Deep Crimson */
+  --journal-faded: #666666;
+  
+  /* Typography */
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-urdu: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+
+  /* Material Overrides */
+  --md-default-bg-color: var(--journal-bg);
+  --md-default-fg-color: var(--journal-text);
+  --md-primary-fg-color: var(--journal-text);
+  --md-accent-fg-color: var(--journal-accent);
+}
+
+/* Base Layout */
+body {
+  background-color: var(--journal-bg);
+  color: var(--journal-text);
+  font-family: var(--font-serif);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.md-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Kill Sidebar & Standard Header */
+.md-sidebar, .md-header {
+  display: none !important;
+}
+
+.md-main__inner {
+  margin-top: 0 !important;
+}
+
+/* Custom Masthead */
+.masthead {
+  padding: 4rem 0 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 4rem;
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.site-title a {
+  color: var(--journal-text);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.site-nav a {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--journal-faded);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: var(--journal-text);
+}
+
+/* Typography Overrides */
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin: 4rem 0 2rem;
+  color: var(--journal-faded);
+}
+
+/* Poetry Styling */
+.urdu-text {
+  font-family: var(--font-urdu);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 2;
+  direction: rtl;
+  text-align: center;
+  margin: 4rem 0;
+  display: block;
+}
+
+.transliteration {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--journal-faded);
+  margin-top: -3rem;
+  margin-bottom: 5rem;
+}
+
+/* Homepage Specifics */
+.hero-couplet {
+  padding: 6rem 0;
+}
+
+.hero-urdu {
+  font-family: var(--font-urdu);
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-english {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--journal-faded);
+}
+
+/* Cards & Lists */
+.poet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.poet-card {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.poet-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  margin-bottom: 1rem;
+}
+
+.poet-card:hover .poet-image {
+  filter: grayscale(0%);
+}
+
+.poet-name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Footer */
+.journal-footer {
+  margin-top: 8rem;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--journal-faded);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: var(--journal-text);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* Hide Unnecessary Elements */
+.md-nav__title, .md-search, .md-footer-nav {
+  display: none !important;
+}
+
+/* Performance/Video Adjustments */
+.performance-card {
+  margin: 4rem 0;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  filter: grayscale(100%) contrast(110%);
+  transition: filter 0.5s;
+}
+
+iframe:hover {
+  filter: grayscale(0%);
+}
+
+/* Link Styling */
+.poem-link {
+  display: block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--journal-text) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.poem-link:hover {
+  border-bottom-color: var(--journal-accent);
+}
+
+.catalog-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: inherit !important;
+  font-family: var(--font-serif);
+}
+
+.catalog-link:hover {
+  color: var(--journal-accent) !important;
+}

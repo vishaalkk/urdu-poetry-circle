@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PoetCard from '../components/PoetCard.astro';
+import verses from '../content/archive/master_verses.json';
+
+const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+---
+
+<Layout title="Columbia Urdu Poetry Group">
+	<section class="py-24 text-center">
+		<a href={`/poems/${randomVerse.slug}`} class="group no-underline block">
+			<div class="font-urdu text-3xl md:text-5xl text-journal-text transition-all group-hover:text-journal-accent cursor-pointer flex flex-col gap-y-10 py-8 px-4 mb-8">
+				{randomVerse.urdu.split('\n').map(line => (
+					<div class="leading-relaxed">{line}</div>
+				))}
+			</div>
+			<div class="font-sans text-[10px] uppercase tracking-[0.4em] text-journal-faded group-hover:text-journal-accent transition-colors">
+				{randomVerse.poet} &bull; View Poem &rarr;
+			</div>
+		</a>
+	</section>
+
+	<section class="mt-12 text-center max-w-xl mx-auto border-b border-black/5 pb-24">
+		<p class="text-lg leading-relaxed mb-12">
+			A weekly zoom gathering dedicated to the study and appreciation of Urdu Poetry. Since 2020, we have archived our readings of classical and contemporary masters.
+		</p>
+		<a href="/poets" class="font-sans text-xs uppercase tracking-[0.3em] text-journal-text border-b border-journal-text pb-2 hover:text-journal-accent hover:border-journal-accent transition-all">
+			Explore the Catalog
+		</a>
+	</section>
+
+	<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-16">
+		<PoetCard name="Mirza Ghalib" href="/poets/Ghalib" />
+		<PoetCard name="Mir Taqi Mir" href="/poets/Mir Taqi Mir" />
+		<PoetCard name="Faiz Ahmed Faiz" href="/poets/Faiz Ahmed Faiz" />
+	</section>
+</Layout>

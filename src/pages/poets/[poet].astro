@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import poemsData from '../../content/archive/poems.json';
+
+export function getStaticPaths() {
+  const poets = [...new Set(poemsData.map(p => p.poet))].filter(Boolean);
+  return poets.map(p => ({ params: { poet: p } }));
+}
+
+const { poet } = Astro.params;
+const poetPoems = poemsData
+  .filter(p => p.poet === poet)
+  .sort((a, b) => {
+    const dateA = a.readings[0]?.date ? new Date(a.readings[0].date).getTime() : 0;
+    const dateB = b.readings[0]?.date ? new Date(b.readings[0].date).getTime() : 0;
+    return dateB - dateA;
+  });
+---
+
+<Layout title={`${poet} | Columbia Urdu Poetry Group`}>
+	<header class="text-center mb-24">
+		<div class="font-sans text-[10px] uppercase tracking-[0.4em] text-journal-faded mb-6">Archive Collection</div>
+		<h1 class="text-6xl italic mb-8">{poet}</h1>
+		<div class="h-px w-12 bg-journal-accent/20 mx-auto mb-8"></div>
+		<p class="text-journal-faded font-serif italic">{poetPoems.length} poem{poetPoems.length !== 1 ? 's' : ''} recorded</p>
+	</header>
+
+	<section class="max-w-4xl mx-auto">
+		<div class="mb-16">
+			<input 
+				type="text" 
+				id="poem-filter" 
+				placeholder="Filter poems by title..." 
+				class="w-full bg-transparent border-b border-black/5 py-2 font-serif text-lg focus:outline-none focus:border-journal-accent/30 transition-colors italic"
+			/>
+		</div>
+
+		<div id="poem-list" class="space-y-1">
+			{poetPoems.map(p => (
+				<div class="poem-item group border-b border-black/[0.03] hover:bg-black/[0.01] transition-colors">
+					<a 
+						href={`/poems/${p.slug}`} 
+						class="flex items-center py-6 px-4 no-underline"
+					>
+						<span class="w-24 md:w-32 flex-shrink-0 font-sans text-[9px] uppercase tracking-widest text-journal-faded opacity-60 group-hover:opacity-100 transition-opacity">
+							{p.readings[0]?.date ? new Date(p.readings[0].date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '---'}
+						</span>
+						<span class="flex-grow text-xl md:text-2xl font-serif text-journal-text group-hover:text-journal-accent transition-colors">
+							{p.title}
+						</span>
+						<span class="font-serif italic text-sm text-journal-faded opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
+							Read poem &rarr;
+						</span>
+					</a>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<script>
+		const filterInput = document.getElementById('poem-filter');
+		const poemItems = document.querySelectorAll('.poem-item');
+
+		filterInput?.addEventListener('input', (e) => {
+			const term = (e.target as HTMLInputElement).value.toLowerCase();
+			poemItems.forEach(item => {
+				const title = item.querySelector('.flex-grow')?.textContent?.toLowerCase() || '';
+				if (title.includes(term)) {
+					(item as HTMLElement).style.display = 'block';
+				} else {
+					(item as HTMLElement).style.display = 'none';
+				}
+			});
+		});
+	</script>
+</Layout>

@@ -1,0 +1,128 @@
+---
+import poemsData from '../content/archive/poems.json';
+
+const searchData = poemsData.map(p => ({
+  title: p.title,
+  poet: p.poet,
+  slug: `/poems/${p.slug}`
+}));
+---
+
+<div id="search-trigger" class="cursor-pointer hover:text-journal-accent transition-colors flex items-center gap-2 group">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+  <span>Search</span>
+</div>
+
+<div id="search-modal" class="fixed inset-0 z-50 hidden items-start justify-center pt-24 px-6">
+  <!-- Backdrop -->
+  <div id="search-backdrop" class="absolute inset-0 bg-journal-text/40 backdrop-blur-sm"></div>
+  
+  <!-- Search Box -->
+  <div class="relative w-full max-w-2xl bg-journal-bg shadow-2xl border border-black/5 rounded-lg overflow-hidden animate-in fade-in zoom-in duration-200">
+    <div class="flex items-center border-b border-black/5 px-6">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-journal-faded" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Type to search archive..." 
+        class="w-full bg-transparent py-6 px-4 text-xl font-serif focus:outline-none text-journal-text placeholder:text-journal-faded/40"
+        autocomplete="off"
+      />
+      <div id="close-search" class="text-[10px] uppercase tracking-widest text-journal-faded cursor-pointer hover:text-journal-accent border border-black/10 px-2 py-1 rounded">
+        Esc
+      </div>
+    </div>
+    
+    <div id="search-results" class="max-h-[60vh] overflow-y-auto p-6 space-y-2 custom-scrollbar">
+      <!-- Empty State -->
+      <div id="search-empty" class="text-center py-12 text-journal-faded italic text-sm">
+        Start typing to search poems and poets...
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ searchData }}>
+  const trigger = document.getElementById('search-trigger');
+  const modal = document.getElementById('search-modal');
+  const backdrop = document.getElementById('search-backdrop');
+  const close = document.getElementById('close-search');
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const emptyState = document.getElementById('search-empty');
+
+  function openSearch() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    input.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSearch() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+    input.value = '';
+    renderResults([]);
+  }
+
+  function renderResults(matches) {
+    if (matches.length === 0) {
+      results.innerHTML = '';
+      results.appendChild(emptyState);
+      return;
+    }
+
+    results.innerHTML = matches.map(m => `
+      <a href="${m.slug}" class="flex items-center justify-between p-4 rounded-md hover:bg-journal-accent/5 group transition-all border border-transparent hover:border-journal-accent/10">
+        <div>
+          <div class="text-lg font-serif text-journal-text group-hover:text-journal-accent transition-colors">${m.title}</div>
+          <div class="text-[10px] uppercase tracking-widest text-journal-faded mt-1">${m.poet}</div>
+        </div>
+        <div class="text-journal-accent opacity-0 group-hover:opacity-100 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  trigger.addEventListener('click', openSearch);
+  close.addEventListener('click', closeSearch);
+  backdrop.addEventListener('click', closeSearch);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSearch();
+    if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault();
+      openSearch();
+    }
+  });
+
+  input.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    if (query.length < 2) {
+      renderResults([]);
+      return;
+    }
+
+    const matches = searchData.filter(p => 
+      p.title.toLowerCase().includes(query) || 
+      p.poet.toLowerCase().includes(query)
+    ).slice(0, 10);
+
+    renderResults(matches);
+  });
+</script>
+
+<style>
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+  }
+</style>
