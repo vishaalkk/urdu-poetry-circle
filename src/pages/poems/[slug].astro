@@ -64,7 +64,7 @@ const rekhtaLabel = isUrdushahkar ? "Urdu Shahkar" : "Rekhta";
 		<header class="text-center mb-24">
 			<h1 class="text-4xl md:text-5xl italic leading-tight mb-4">{poem.title}</h1>
 			<div class="font-sans text-[10px] uppercase tracking-[0.4em] text-journal-faded mb-8 hover:text-journal-accent transition-colors">
-				<a href={`/v2/poets/${poem.poet === "Mirza Ghalib" ? "Ghalib" : poem.poet}`} class="no-underline">{poem.poet}</a>
+				<a href={`/poets/${poem.poet === "Mirza Ghalib" ? "Ghalib" : poem.poet}`} class="no-underline">{poem.poet}</a>
 			</div>
 			<div class="h-px w-16 bg-black/10 mx-auto"></div>
 		</header>

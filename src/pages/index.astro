@@ -8,7 +8,7 @@ const randomVerse = verses[Math.floor(Math.random() * verses.length)];
 
 <Layout title="Columbia Urdu Poetry Group">
 	<section class="py-24 text-center">
-		<a href={`/v2/poems/${randomVerse.slug}`} class="group no-underline block">
+		<a href={`/poems/${randomVerse.slug}`} class="group no-underline block">
 			<div class="font-urdu text-3xl md:text-5xl text-journal-text transition-all group-hover:text-journal-accent cursor-pointer flex flex-col gap-y-10 py-8 px-4 mb-8">
 				{randomVerse.urdu.split('\n').map(line => (
 					<div class="leading-relaxed">{line}</div>
@@ -24,14 +24,14 @@ const randomVerse = verses[Math.floor(Math.random() * verses.length)];
 		<p class="text-lg leading-relaxed mb-12">
 			A weekly zoom gathering dedicated to the study and appreciation of Urdu Poetry. Since 2020, we have archived our readings of classical and contemporary masters.
 		</p>
-		<a href="/v2/poets" class="font-sans text-xs uppercase tracking-[0.3em] text-journal-text border-b border-journal-text pb-2 hover:text-journal-accent hover:border-journal-accent transition-all">
+		<a href="/poets" class="font-sans text-xs uppercase tracking-[0.3em] text-journal-text border-b border-journal-text pb-2 hover:text-journal-accent hover:border-journal-accent transition-all">
 			Explore the Catalog
 		</a>
 	</section>
 
 	<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-16">
-		<PoetCard name="Mirza Ghalib" href="/v2/poets/Ghalib" />
-		<PoetCard name="Mir Taqi Mir" href="/v2/poets/Mir Taqi Mir" />
-		<PoetCard name="Faiz Ahmed Faiz" href="/v2/poets/Faiz Ahmed Faiz" />
+		<PoetCard name="Mirza Ghalib" href="/poets/Ghalib" />
+		<PoetCard name="Mir Taqi Mir" href="/poets/Mir Taqi Mir" />
+		<PoetCard name="Faiz Ahmed Faiz" href="/poets/Faiz Ahmed Faiz" />
 	</section>
 </Layout>

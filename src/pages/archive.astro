@@ -27,14 +27,14 @@ const allReadings = poemsData.flatMap(poem =>
 						{r.date ? new Date(r.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }) : '---'}
 					</span>
 					<div class="flex-grow">
-						<a href={`/v2/poems/${r.slug}`} class="no-underline block">
+						<a href={`/poems/${r.slug}`} class="no-underline block">
 							<h3 class="text-xl md:text-2xl font-serif text-journal-text group-hover:text-journal-accent transition-colors">{r.title}</h3>
 						</a>
-						<a href={`/v2/poets/${r.poet === "Mirza Ghalib" ? "Ghalib" : r.poet}`} class="no-underline inline-block mt-1">
+						<a href={`/poets/${r.poet === "Mirza Ghalib" ? "Ghalib" : r.poet}`} class="no-underline inline-block mt-1">
 							<p class="text-[10px] uppercase tracking-widest text-journal-faded hover:text-journal-accent transition-colors">{r.poet}</p>
 						</a>
 					</div>
-					<a href={`/v2/poems/${r.slug}`} class="no-underline">
+					<a href={`/poems/${r.slug}`} class="no-underline">
 						<span class="font-serif italic text-sm text-journal-faded opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
 							View history &rarr;
 						</span>

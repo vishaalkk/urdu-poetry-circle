@@ -17,7 +17,7 @@ const featuredPoets = [
 
 	<section class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-32">
 		{featuredPoets.map(name => (
-			<PoetCard name={name} href={`/v2/poets/${name === "Mirza Ghalib" ? "Ghalib" : name}`} />
+			<PoetCard name={name} href={`/poets/${name === "Mirza Ghalib" ? "Ghalib" : name}`} />
 		))}
 	</section>
 
@@ -25,7 +25,7 @@ const featuredPoets = [
 		<h2 class="font-sans text-xs uppercase tracking-[0.3em] text-center mb-16 text-journal-faded">Complete Catalog ({allPoets.length} Poets)</h2>
 		<div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-4xl mx-auto">
 			{allPoets.map(p => (
-				<a href={`/v2/poets/${p}`} class="text-sm font-serif hover:text-journal-accent transition-colors py-1 border-b border-transparent hover:border-journal-accent/20">
+				<a href={`/poets/${p}`} class="text-sm font-serif hover:text-journal-accent transition-colors py-1 border-b border-transparent hover:border-journal-accent/20">
 					{p}
 				</a>
 			))}
