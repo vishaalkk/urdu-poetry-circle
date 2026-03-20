@@ -119,9 +119,33 @@ def process_data(raw_records):
         
     return result
 
+def update_airtable_status(record_ids):
+    if not AIRTABLE_API_KEY or not record_ids:
+        return
+    
+    headers = {
+        "Authorization": f"Bearer {AIRTABLE_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    url = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"
+    
+    # Airtable allows updating up to 10 records at a time
+    for i in range(0, len(record_ids), 10):
+        chunk = record_ids[i:i+10]
+        records = [{"id": rid, "fields": {"Status": "Added"}} for rid in chunk]
+        try:
+            response = requests.patch(url, headers=headers, json={"records": records})
+            if response.ok:
+                print(f"Successfully marked {len(chunk)} records as 'Added' in Airtable")
+            else:
+                print(f"Error updating status: {response.status_code} - {response.text}")
+        except Exception as e:
+            print(f"Failed to update Airtable: {e}")
+
 def main():
     raw_data = fetch_airtable_data()
     source = "Airtable"
+    
     if raw_data is None:
         raw_data = read_catalog_csv()
         source = "catalog.csv"
@@ -130,7 +154,20 @@ def main():
         print("No data found.")
         return
 
-    processed_data = process_data(raw_data)
+    # If fetching from Airtable, handle status updates
+    if source == "Airtable":
+        to_update = [r["id"] for r in raw_data if r["fields"].get("Status") != "Added"]
+        if to_update:
+            print(f"Found {len(to_update)} new records to process...")
+            update_airtable_status(to_update)
+            # Update local state so they are included in the processing
+            for r in raw_data:
+                if r["id"] in to_update:
+                    r["fields"]["Status"] = "Added"
+
+    # Only process records marked as 'Added'
+    added_records = [r for r in raw_data if r["fields"].get("Status") == "Added"]
+    processed_data = process_data(added_records)
     
     # Process and save to src/content/archive
     output_dir = Path("src/content/archive")
@@ -139,7 +176,7 @@ def main():
     with open(output_dir / "poems.json", "w", encoding="utf-8") as f:
         json.dump(processed_data, f, indent=2, ensure_ascii=False)
     
-    print(f"Successfully processed {len(processed_data)} unique poems from {source}")
+    print(f"Successfully processed {len(processed_data)} poems to archive.")
 
 if __name__ == "__main__":
     main()
