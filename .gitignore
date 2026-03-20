@@ -7,4 +7,4 @@ dist/
 .venv/
 __pycache__/
 *.pyc
-src/content/poems.json
+src/content/archive/poems.json
